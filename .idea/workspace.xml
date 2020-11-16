@@ -29,29 +29,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f858d7f-f861-42d0-b8d3-52b495022cc3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/index2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/displacement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/mario.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/noise.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/img/sprite.svg" beforeDir="false" afterPath="$PROJECT_DIR$/build/img/sprite.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/img/tileset.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/6.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/atlas.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/atlas.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/cat.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/displacement.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/mario.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/noise.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/img/tileset.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/svg/logo.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/logo.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/svg/reddit.svg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/svg/reddit.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.sass" afterDir="false" />
@@ -73,6 +62,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1ipIlKuMRp5cFIinVYMLvFMcEUc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -81,7 +71,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../ardenisMinLand" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -133,6 +123,11 @@
       <workItem from="1605109505947" duration="68000" />
       <workItem from="1605109657683" duration="2404000" />
       <workItem from="1605202411285" duration="75000" />
+      <workItem from="1605258341628" duration="15181000" />
+      <workItem from="1605274249153" duration="1573000" />
+      <workItem from="1605275842947" duration="1010000" />
+      <workItem from="1605276872697" duration="251000" />
+      <workItem from="1605514456698" duration="11100000" />
     </task>
     <servers />
   </component>
@@ -168,30 +163,41 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2627" y="332" width="529" height="409" key="#com.intellij.fileTypes.FileTypeChooser/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603196933304" />
-    <state x="743" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1603218407515">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="1072" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1605531618921">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="743" y="297" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1603218407515" />
+    <state x="1072" y="297" width="424" height="479" key="FileChooserDialogImpl/0.0.3840.1080@0.0.3840.1080" timestamp="1605531618921" />
     <state x="2663" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603098200006" />
     <state x="1982" y="275" width="824" height="519" key="IDE.errors.dialog" timestamp="1602664609952">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="1982" y="275" width="824" height="519" key="IDE.errors.dialog/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1602664609952" />
+    <state width="359" height="445" key="SwitcherDM" timestamp="1605264304867">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="359" height="445" key="SwitcherDM/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605264304867" />
+    <state x="804" y="447" width="292" height="176" key="VCS.ChangelistChooser" timestamp="1605260164537">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="804" y="447" width="292" height="176" key="VCS.ChangelistChooser/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605260164537" />
     <state x="2587" y="138" width="585" height="801" key="find.popup" timestamp="1603187550547">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2587" y="138" width="585" height="801" key="find.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603187550547" />
-    <state x="143" y="247" key="run.anything.popup" timestamp="1605105038200">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="286" y="247" key="run.anything.popup" timestamp="1605531349776">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="143" y="247" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603380499595" />
-    <state x="143" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605105038200" />
+    <state x="286" y="247" key="run.anything.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1605531349776" />
+    <state x="143" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605273891120" />
     <state x="2063" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603198635125" />
-    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1605103339482">
-      <screen x="0" y="0" width="1920" height="1080" />
+    <state x="284" y="237" width="1344" height="678" key="search.everywhere.popup" timestamp="1605537441261">
+      <screen x="0" y="0" width="3840" height="1080" />
     </state>
     <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603380497818" />
-    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605103339482" />
+    <state x="284" y="237" width="1344" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1605537441261" />
+    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605275110211" />
     <state x="2062" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603198634834" />
   </component>
 </project>
