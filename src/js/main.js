@@ -1,58 +1,3 @@
-let s = document.querySelectorAll('.section');
-
-for (let i = 0; i <= s.length; i++) {
-    let info = window.getComputedStyle(s[i], null);
-    console.log(`${i}: `, info);
-    let tr = info.getPropertyValue("transform") ||
-        info.getPropertyValue("-o-transform") ||
-        info.getPropertyValue("-webkit-transform") ||
-        info.getPropertyValue("-moz-transform") ||
-        info.getPropertyValue("-ms-transform");
-
-    console.log('MATRIX', tr);
-
-    let x = tr.match(/matrix\((?:\d+, ?){4}(\d+)/);
-    console.log('some: ', x);
-    let values = tr.split('(')[1].split(')')[0].split(',');
-    let a = values[0];
-    let b = values[1];
-
-    // next line works for 30deg but not 130deg (returns 50);
-    // let angle = Math.round(Math.asin(sin) * (180/Math.PI));
-    let angle = Math.round(Math.atan2(b, a) * (180/Math.PI));
-
-    console.log('Rotate: ' + angle);
-
-    window.addEventListener('wheel', e => {
-        e.preventDefault();
-        e = e || window.event;
-
-        /*if (s[i] === e.target) {
-            s[i].style.cssText = `
-            z-index: 5;
-            background-color: red`;
-        }
-*/
-        let delta = e.deltaY || e.detail;
-        console.log(delta);
-
-        let rotateAngle;
-        if (delta === 3) {
-            for (; i <= s.length; i++){
-                s[i].style.transform = `rotateZ(${angle + 60}deg)`;
-                rotateAngle = s[i].style.transform;
-                console.log(s[i].style.transform);
-            }
-        } else if (delta === -3) {
-            for (; i <= s.length; i++){
-                s[i].style.transform = `rotateZ(${angle - 60}deg)`;
-                console.log(s[i].style.transform);
-            }
-        }
-
-    })
-
-}
 
 
 /*
@@ -99,5 +44,104 @@ closeBtn.addEventListener('click', (e) => {
                 document.body.classList.remove('scroll--hidden')
         }
 })
+
+@for $i from 1 through 6
+  @each $color in $colors
+    .section#{$i}
+      z-index: 2
+      transform: rotateZ($angle * ($i - 1))
+      background-color: rgba($color, 0.5)
+
+
 */
+let s = document.querySelectorAll('.section');
+
+
+window.addEventListener('wheel', e => {
+    e.preventDefault();
+    e = e || window.event;
+    let delta = e.deltaY || e.detail;
+
+    let s = document.querySelectorAll('.section');
+    s.forEach(item => {
+
+
+
+        /*        item.addEventListener('mouseenter', evt => {
+
+                    console.log('TARGET: ', evt.target);
+                    if (evt.target === item) {
+                        item.classList.add('section--active')
+                    } else if (evt.target !== item) {
+                        item.classList.remove('section--active')
+                    }
+                })*/
+    });
+
+    for (let i = 0; i <= s.length; i++) {
+/*
+        let info = window.getComputedStyle(s[i], null);
+        let tr = info.getPropertyValue("transform") ||
+            info.getPropertyValue("-o-transform") ||
+            info.getPropertyValue("-webkit-transform") ||
+            info.getPropertyValue("-moz-transform") ||
+            info.getPropertyValue("-ms-transform");
+
+        console.log(`MATRIX ${i}`, tr);
+
+        let x = tr.match(/matrix\((?:\d+, ?){4}(\d+)/);
+        console.log('some: ', x);
+        let values = tr.split('(')[1].split(')')[0].split(',');
+        let a = values[0];
+        let b = values[1];
+
+        // next line works for 30deg but not 130deg (returns 50);
+        // let angle = Math.round(Math.asin(sin) * (180/Math.PI));
+        let angle = Math.round(Math.atan2(b, a) * (180 / Math.PI));
+
+        console.log('Rotate: ' + angle);
+*/
+
+        let rotateAngle = s[i].style.transform;
+
+/*
+        console.log("NOT CHANGE: ", rotateAngle);
+*/
+        if (delta > 0) {
+            for (let j = i; j <= s.length; j++) {
+
+                let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
+/*
+                console.log(`${i} CHANGE`, joinArr);
+*/
+
+                s[i].style.transform = `rotateZ(${joinArr + 60}deg)`;
+
+            }
+        } else if (delta < 0) {
+            for (let j = i; j <= s.length; j++) {
+
+                let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
+/*
+                console.log(`${i} CHANGE`, joinArr);
+*/
+
+                s[i].style.transform = `rotateZ(${joinArr - 60}deg)`;
+
+            }
+        }
+        e.stopPropagation();
+        if (s[i].style.transform === 'rotateZ(0deg)' || s[i].style.transform === 'rotateZ(360deg)') {
+            s[i].classList.add('section--active')
+        } else {
+            s[i].classList.remove('section--active')
+        }
+
+    }
+})
+
+for (let i = 0; i <= s.length; i++) {
+    s[i].style.transform = `rotateZ(${i * 60}deg)`;
+    console.log(s[i].style.transform);
+}
 

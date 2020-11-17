@@ -40,12 +40,23 @@ $angle: -60deg
 
 $colors: red, black, orange, green, rebeccapurple, yellow
 
-@for $i from 1 through 6
-  @each $color in $colors
-    .section#{$i}
-      z-index: 1
-      transform: rotateZ($angle * ($i - 1))
-      background-color: rgba($color, 0.5)
+
+.section
+  display: flex
+  padding: 12.5rem 20rem 12.5rem 5rem
+  align-items: center
+  width: 100vw
+  min-height: 100vh
+  position: absolute
+  font-size: 6rem
+  transform-origin: left center
+  transition: all 1s ease
+  z-index: 3
+  opacity: 0.5
+
+  &--active
+    z-index: 10
+    opacity: 0.85
 
 svg
   width: 100%
@@ -173,22 +184,6 @@ p
     fill: rgba($purple, 0.75)
     height: 2rem
 
-.section
-  display: flex
-  padding: 12.5rem 20rem
-  align-items: center
-  text-align: center
-  width: 100vw
-  min-height: 100vh
-  position: absolute
-  font-size: 6rem
-  transform-origin: left center
-  transition: all 1s ease
-
-  &--active
-    z-index: 10
-    background-color: rgba($orange, 0.35)
-
 .spinner
   height: 100vh
   display: flex
@@ -201,7 +196,7 @@ p
     border: 2px dashed $black
     position: absolute
     height: 50vh
-    width: 25%
+    width: 30%
     left: 0
     transform: translateX(-50%)
     margin: auto 0

@@ -29,7 +29,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f858d7f-f861-42d0-b8d3-52b495022cc3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/css/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/build/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/build/js/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/main.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +121,9 @@
       <workItem from="1605274249153" duration="1573000" />
       <workItem from="1605275842947" duration="1010000" />
       <workItem from="1605276872697" duration="251000" />
-      <workItem from="1605514456698" duration="11871000" />
+      <workItem from="1605514456698" duration="12082000" />
+      <workItem from="1605606956776" duration="5840000" />
+      <workItem from="1605612829629" duration="4697000" />
     </task>
     <servers />
   </component>
@@ -171,19 +181,19 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2587" y="138" width="585" height="801" key="find.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603187550547" />
-    <state x="286" y="247" key="run.anything.popup" timestamp="1605531349776">
-      <screen x="0" y="0" width="3840" height="1080" />
+    <state x="143" y="247" key="run.anything.popup" timestamp="1605614807304">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="143" y="247" key="run.anything.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603380499595" />
     <state x="286" y="247" key="run.anything.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1605531349776" />
-    <state x="143" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605273891120" />
+    <state x="143" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605614807304" />
     <state x="2063" y="247" key="run.anything.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603198635125" />
-    <state x="284" y="237" width="1344" height="678" key="search.everywhere.popup" timestamp="1605537441261">
-      <screen x="0" y="0" width="3840" height="1080" />
+    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup" timestamp="1605607085408">
+      <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1603380497818" />
     <state x="284" y="237" width="1344" height="678" key="search.everywhere.popup/0.0.3840.1080@0.0.3840.1080" timestamp="1605537441261" />
-    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605275110211" />
+    <state x="142" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@0.0.1920.1080" timestamp="1605607085408" />
     <state x="2062" y="237" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1603198634834" />
   </component>
 </project>
