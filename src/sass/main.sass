@@ -1,18 +1,23 @@
 @import "helpers/reset"
 @import "helpers/mixins"
-
-$black: #000000
-$white: #ffffff
-$lightGrey: #cccccc
-$badBlue: #4f8a8b
-$yellow: #fbd46d
-$orange: #e65c00
-$red: #FF0043
-$crimson: crimson
-$transition: all 0.3s ease
-$gray: #f9f9f9
-$darkgray: #7d7d7d
-$purple: rebeccapurple
+@import "res/about"
+@import "res/blog-box"
+@import "res/btn"
+@import "res/footer"
+@import "res/header"
+@import "res/link"
+@import "res/modal"
+@import "res/nav"
+@import "res/our-projects"
+@import "res/pages"
+@import "res/project"
+@import "res/services"
+@import "res/services-box"
+@import "res/social-menu"
+@import "res/spinner"
+@import "res/tabs"
+@import "res/page"
+@import "res/section"
 
 *, *:before, *:after
   box-sizing: border-box
@@ -23,40 +28,26 @@ body
   font-family: Raleway
   font-weight: 500
   color: $black
-  min-height: 100vh
+  height: 100vh
   display: flex
   background-color: $gray
   flex-direction: column
   justify-content: space-between
+  overflow-x: hidden
   scroll-behavior: smooth
 
-main
-  position: relative
-  min-height: 100vh
+.main
+  &-content
+    position: relative
+    width: 100%
+    padding-bottom: 5%
+
+  &--padding
+    padding: 0
+
+article
   width: 100%
-
-$section: '.section'
-$angle: -60deg
-
-$colors: red, black, orange, green, rebeccapurple, yellow
-
-
-.section
-  display: flex
-  padding: 12.5rem 20rem 12.5rem 5rem
-  align-items: center
-  width: 100vw
-  min-height: 100vh
-  position: absolute
-  font-size: 6rem
-  transform-origin: left center
-  transition: all 1s ease
-  z-index: 3
-  opacity: 0.5
-
-  &--active
-    z-index: 10
-    opacity: 0.85
+  position: relative
 
 svg
   width: 100%
@@ -79,302 +70,12 @@ p
   line-height: 1.5rem
   color: $darkgray
 
-.header
-  display: flex
+
+.container
   width: 100%
-  min-height: 5rem
-  border-bottom: 1px solid rgba($purple, 0.5)
-  background-color: $white
-  z-index: 999
-  position: fixed
-
-.navigation
-  width: 80%
-  display: flex
-  justify-content: space-between
-  align-items: center
-  margin: 0 auto
-
-  &__wrapper
-    display: flex
-    justify-self: flex-end
-    justify-content: space-between
-    width: 45%
-    align-items: center
-
-  &__item
-    width: 100%
-    height: 100%
-    text-align: center
-    position: relative
-
-  &__link
-    display: flex
-    justify-content: center
-    align-items: center
-    text-align: center
-    position: relative
-    width: 100%
-    padding: 0.75rem 1rem
-    font-size: 1.15rem
-    color: $lightGrey
-
-    &:after
-      content: ''
-      display: block
-      width: 50%
-      height: 2px
-      position: absolute
-      bottom: 0
-      left: 0
-      right: 0
-      transform: translateX(50%)
-      background-color: $purple
-      visibility: hidden
-      opacity: 0
-
-    &:hover,
-    &:focus,
-    &:active
-      color: $black
-      &:after
-        visibility: visible
-        opacity: 1
-
-      & ~ .nav-submenu
-        transform: translate(-10%, -1px) scale(1)
-        opacity: 1
-        visibility: visible
-
-.nav-submenu
-  display: flex
-  opacity: 0
-  visibility: hidden
-  transform-origin: bottom center
-  transform: translate(-10%, -100%) scale(0)
-  position: absolute
-  top: 145%
-  left: 0
-  flex-direction: column
-  background-color: $white
-  border: 1px solid rgba($purple, 0.5)
-  padding: 1rem 0
-  z-index: 998
-  transition: all 1s ease
-  &__item
-    display: flex
-  &__link
-    display: flex
-    font-weight: 400
-    width: 100%
-    font-size: 1.15rem
-    padding: 0.75rem 2.5rem
-    justify-content: flex-start
-    align-items: center
-
-.logo
-  width: 15%
-  padding: 0.5rem 0
   height: 100%
   display: flex
-  justify-content: flex-start
-  align-items: center
 
-  svg
-    fill: rgba($purple, 0.75)
-    height: 2rem
-
-.spinner
-  height: 100vh
-  display: flex
-  flex-direction: column
-  justify-content: center
-  align-items: center
-  position: relative
-
-  &--wrapper
-    border: 2px dashed $black
-    position: absolute
-    height: 50vh
-    width: 30%
-    left: 0
-    transform: translateX(-50%)
-    margin: auto 0
-    border-radius: 50%
-
-
-.footer
-  width: 100%
-  margin: 0 auto
-  bottom: 0
-  left: 0
-  display: flex
-  align-items: center
-  justify-content: space-between
-  &--wrapper
-    padding: 1.5rem 2.5%
-    background-color: rgba($black, 0.05)
-    width: 60%
-    margin: 0 auto
-    display: flex
-    justify-content: space-between
-    align-items: center
-    z-index: 10
-    border-top-left-radius: 10px
-    border-top-right-radius: 10px
-
-.social-menu
-  display: flex
-  justify-content: space-between
-  align-items: center
-  width: 30%
-  margin: 0 auto
-
-  &__item
-    width: 100%
-
-  &__link
-    display: flex
-    align-items: center
-    justify-content: center
-    width: 3.5rem
-    height: 3.5rem
-
-    svg
-      fill: rgba($purple, 0.75)
-      transition: $transition
-
-    &:hover
-      svg
-        fill: rgba($purple, 1)
-        transform: scale(1.05)
-
-.copyright
-  width: 20%
-  display: flex
-
-.modal
-  display: flex
-  flex-direction: column
-  width: 40%
-  padding: 3.5% 5%
-  background-color: rgba($purple, 0.75)
-  position: relative
-
-  &--wrapper
-    z-index: 9999
-    display: none
-    width: 100%
-    height: 100vh
-    position: fixed
-    top: 0
-    left: 0
-    background-color: rgba($purple, 0.25)
-    justify-content: center
-    align-items: center
-
-  &__title
-    font-size: 3.25rem
-    width: 100%
-    color: $white
-
-  &__description
-    font-size: 1.25rem
-    padding: 1.5rem 0
-    width: 100%
-    color: $gray
-
-  &__input
-    border-radius: 7.5px
-    border: none
-    margin: 0.75rem 0
-    padding: 1rem 1rem
-    font-size: 1.35rem
-    width: 100%
-
-  &__comment
-    margin: 0.75rem 0
-    border-radius: 7.5px
-    padding: 1.25rem 1rem
-    font-size: 1.25rem
-    border: none
-
-.modal-order
-  &--active
-    display: flex
-
-.input--wrapper
-  display: flex
-  width: 100%
-  justify-content: space-between
-  align-items: center
-  margin-top: 1rem
-
-.checkbox
-  &:hover,
-  &:focus,
-  &:active
-    cursor: pointer
-
-label
-  color: $white
-  margin: 0 10px
-  &:hover,
-  &:focus,
-  &:active
-    cursor: pointer
-
-.btn
-  display: flex
-  justify-content: center
-  align-items: center
-  text-align: center
-  border: none
-  transition: $transition
-  &:hover,
-  &:focus,
-  &:active
-    cursor: pointer
-
-  &--submit
-    font-size: 1.5rem
-    width: 40%
-    padding: 0.5rem 1rem
-    background-color: rgba($white, 1)
-    border-radius: 7.5px
-    &:hover,
-    &:focus,
-    &:active
-      background-color: rgba($orange, 0.85)
-      color: $white
-
-  &--close
-    position: absolute
-    width: 5rem
-    height: 5rem
-    color: $white
-    background-color: transparent
-    border: none
-    font-size: 3.5rem
-    line-height: 4rem
-    top: 10%
-    right: 12.5%
-    &:hover,
-    &:focus,
-    &:active
-      cursor: pointer
-
-  &--order
-    width: 20%
-    font-size: 1.1rem
-    background-color: rgba($purple, 0.75)
-    padding: 1rem 1.5rem
-    color: $white
-    border-radius: 5px
-    &:hover,
-    &:focus,
-    &:active
-      background-color: rgba($purple, 1)
 
 
 .scroll--hidden
@@ -389,148 +90,61 @@ label
   margin: 0 auto
   flex-direction: column
 
-.services
+@keyframes show
+  from
+    opacity: 0
+    transform: translateX(-50%)
+    visibility: hidden
+  to
+    opacity: 1
+    transform: translateX(0)
+    visibility: visible
+
+@keyframes showPage
+  10%
+    transform: scale(1, 0.002)
+  35%
+    transform: scale(0.2, 0.002)
+    opacity: 1
+  50%
+    transform: scale(0.2, 0.002)
+    opacity: 0
+  85%
+    transform: scale(1, 0.002)
+    opacity: 1
+  100%
+    transform: scale(1, 1)
+
+.title
+  &--wrapper
+    display: flex
+    width: 100%
+    justify-content: flex-start
+    align-items: center
+
+
+.map
+  width: 100%
+  height: 100%
   display: flex
-  flex-direction: column
   justify-content: center
   align-items: center
-  width: 100%
-  padding: 2.5% 0
-
-  &__title
-    width: 100%
-    font-size: 3.75rem
-    padding: 0 2.5rem
-
-  &__description
-    width: 100%
-    padding: 1.5rem 2.5rem 0
-    text-align: left
-    font-size: 1.25rem
-
-.services-box
-  display: grid
-  grid-template-columns: repeat(3, 1fr)
-  width: 100%
-  padding: 2.5%
-  grid-gap: 2.5%
-
-  &__item
-    display: flex
-    flex-direction: column
-    padding: 10%
-    background-color: $white
-    transition: $transition
-
-    h3
-      font-size: 2rem
-      width: 100%
-      text-align: left
-
-    p
-      width: 100%
-      text-align: justify
-      font-size: 1rem
-      padding: 1.25rem 0
-
-    &:hover,
-    &:focus,
-    &:active
-      box-shadow: 0 0 30px 0 rgba($purple, 0.5)
-
-.our-projects
-  width: 100%
-  display: flex
-  flex-direction: column
-  padding: 7.5% 20%
-
-  &__title
-    font-size: 3.75rem
-    width: 100%
-
+  position: fixed
   &--wrapper
-    display: grid
     width: 100%
-    grid-template-columns: repeat(4, 1fr)
-    grid-gap: 2.5%
-    padding: 2rem 0
-
-.project
-  display: flex
-  flex-direction: column
-  justify-content: space-between
-  align-items: flex-start
-
-  &__image
-    width: 100%
-    object-fit: cover
-    background-color: $white
-    transition: $transition
-
-    &:hover,
-    &:focus,
-    &:active
-      background-color: rgba($purple, 0.5)
-
-    img
-      object-fit: cover
-      width: 100%
-
-  &__title
-    font-size: 2rem
-    width: 100%
-    padding: 2rem 0
-    transition: $transition
-
-  &__caption
-    display: flex
-    margin-top: 2.5rem
-    width: 100%
-    transition: $transition
-    &:hover,
-    &:focus,
-    &:active
-      color: $purple
-
-.tabs
-  width: 100%
-  padding: 3.5% 0
-
-.tabs-triggers
-  display: flex
-  width: 100%
-  margin: 0 auto
-  padding: 1rem 20%
-  border-bottom: 1px solid rgba($purple, 0.5)
-  align-items: center
-  justify-content: flex-start
-
-  &__item
+    height: 100vh
     display: flex
     justify-content: center
     align-items: center
-    font-size: 1.15rem
-    padding: 1rem 0
-    text-align: center
-    color: black
-    letter-spacing: 0
-    flex-grow: 1
+    position: fixed
+    z-index: 1
 
-    &:hover,
-    &:focus,
-    &:active
-      background-color: rebeccapurple
-      color: $white
-
-.tabs-content
-  display: flex
-
-  &__item
-    display: none
-
-    &--active
-      display: flex
-
+.contacts
+  z-index: 5
+  background-color: rgba($white, 0.65)
+  a,
+  p
+    color: $black
 
 
 

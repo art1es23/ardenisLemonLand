@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contacts LemonLand</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link rel="stylesheet" href="./css/main.min.css">
+
+</head>
+<body>
+
+    <header id="header" class="header header--background">
+        <nav class="navigation">
+            <div class="navigation__logo logo">
+                <a href="./index.html" class="logo__link">
+                    <svg class="">
+                        <use xlink:href="./img/sprite.svg#iwatani-1"></use>
+                    </svg>
+                </a>
+            </div>
+
+            <ul class="navigation__wrapper">
+                <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--color">Головна</a></li>
+                <li class="navigation__item">
+                    <a href="services.html" class="navigation__link navigation__link--color">Послуги</a>
+                    <ul class="nav-submenu">
+                        <li class="nav-submenu__item"><a href="services.html#tab-1" class="nav-submenu__link nav-submenu__link--color">Дизайн</a></li>
+                        <li class="nav-submenu__item"><a href="services.html#tab-2" class="nav-submenu__link nav-submenu__link--color">Розробка</a></li>
+                        <li class="nav-submenu__item"><a href="services.html#tab-3" class="nav-submenu__link nav-submenu__link--color">Google</a></li>
+                        <li class="nav-submenu__item"><a href="services.html#tab-4" class="nav-submenu__link nav-submenu__link--color">Реклама</a></li>
+                        <li class="nav-submenu__item"><a href="services.html#tab-5" class="nav-submenu__link nav-submenu__link--color">Підтримка</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item"><a href="./projects.html" class="navigation__link navigation__link--color">Проекти</a></li>
+                <li class="navigation__item"><a href="./about.html" class="navigation__link navigation__link--color">Про нас</a></li>
+                <li class="navigation__item"><a href="./blog.html" class="navigation__link navigation__link--color">Блог</a></li>
+                <li class="navigation__item"><a href="./contacts.html" class="navigation__link navigation__link--color">Контакти</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main data-router-wrapper id="mainContent" class="main-content main--padding">
+
+        <article data-router-view="contacts" class="page page--contacts">
+
+            <div class="map--wrapper">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d20586.500742659904!2d24.03535431132814!3d49.83658373529555!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1605882628785!5m2!1sru!2sua" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+
+            <section class="about contacts">
+                <div class="about--wrapper">
+                    <h1 class="about__title">Agency Lemon</h1>
+                    <div class="about__description about__description--wrapper">
+                        <p>Агентство LEMON ведёт свою историю с ноября 2007 года.</p>
+                        <p>Знания и опыт, которые накопились за годы работы в производстве и печати, позволяют браться за самые сложные задачи и создавать качественную и эффективную рекламу для наших клиентов. Это помогает нам быть уверенными в результате и гарантировать его. Мы живём дизайном и работаем для того, чтобы делать лучшее, и не приемлем посредственный результат.</p>
+                        <p>Наша цель - расти и развиваться в любимом деле!</p>
+
+                        <div class="link link--wrapper">
+                            <span class="link__icon"></span>
+                            <a href="" class="link__item">Presentation 1</a>
+                        </div>
+                        <div class="link link--wrapper">
+                            <span class="link__icon"></span>
+                            <a href="" class="link__item">Presentation 2</a>
+                        </div>
+                        <div class="link link--wrapper">
+                            <span class="link__icon"></span>
+                            <a href="" class="link__item">Presentation 3</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+
+    <footer id="footer" class="footer" style="position: fixed; z-index: 100">
+        <div class="footer--wrapper footer--about">
+            <p class="copyright copyright--color">&copy; Directed by qmpwwsd</p>
+            <ul class="footer__menu social-menu">
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+            <button class="btn btn--order">Зробити замовлення</button>
+        </div>
+    </footer>
+
+    <div class="modal--wrapper modal-order">
+        <form action="" name="formOrder" id="formOrder" class="modal">
+            <div class="btn--close">&times;</div>
+            <h2 class="modal__title">Залиште заявку</h2>
+            <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <input type="text" name="name" class="modal__input" placeholder="Name">
+            <input type="text" name="phone" class="modal__input" placeholder="Phone number">
+            <input type="text" name="email" class="modal__input" placeholder="Email">
+            <textarea name="comment" class="modal__comment" id="" cols="30" rows="4" placeholder="Your comment"></textarea>
+
+            <div class="input--wrapper">
+                <input class="checkbox checkbox--accept" type="checkbox" id="accept">
+                <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних даних</label>
+                <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
+            </div>
+        </form>
+    </div>
+
+<!--    <svg class="">
+        <use xlink:href="./img/svg/sprite.svg#009-flamingo"></use>
+    </svg>
+    <svg class="">
+        <use xlink:href="./img/svg/sprite.svg#004-dinosaur"></use>
+    </svg>-->
+
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+-->
+    <script src="./js/main.js"></script>
+
+<!--
+    <script>
+        $('li a').click(function() {
+            // animate content
+            $('.page__style').addClass('animate_content');
+            $('.page__description').fadeOut(100).delay(2800).fadeIn();
+
+            setTimeout(function() {
+                $('.page__style').removeClass('animate_content');
+            }, 3200);
+
+            //remove fadeIn class after 1500ms
+            setTimeout(function() {
+                $('.page__style').removeClass('fadeIn');
+            }, 1500);
+
+        });
+
+        // on click show page after 1500ms
+        $('.home_link').click(function() {
+            setTimeout(function() {
+                $('.home').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.projects_link').click(function() {
+            setTimeout(function() {
+                $('.projects').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.skills_link').click(function() {
+            setTimeout(function() {
+                $('.skills').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.about_link').click(function() {
+            setTimeout(function() {
+                $('.about').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.contact_link').click(function() {
+            setTimeout(function() {
+                $('.contact').addClass('fadeIn');
+            }, 1500);
+        });
+    </script>
+-->
+
+
+</body>
+</html>

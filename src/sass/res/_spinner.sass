@@ -1,0 +1,22 @@
+@import "./src/sass/helpers/var"
+
+.spinner
+  height: 100vh
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  position: fixed
+  top: 50%
+  left: 0
+  transform: translateY(-50%)
+
+  &--wrapper
+    border: 2px dashed $purple
+    position: absolute
+    height: 85vh
+    width: 42.5%
+    left: 0
+    transform: translateX(-50%)
+    margin: auto 0
+    border-radius: 50%

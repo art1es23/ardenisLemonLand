@@ -1,0 +1,38 @@
+@import "./src/sass/helpers/var"
+
+.project
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  align-items: flex-start
+
+  &__image
+    width: 100%
+    object-fit: cover
+    background-color: $white
+    transition: $transition
+
+    &:hover,
+    &:focus,
+    &:active
+      background-color: rgba($purple, 0.5)
+
+    img
+      object-fit: cover
+      width: 100%
+
+  &__title
+    font-size: 2rem
+    width: 100%
+    padding: 2rem 0
+    transition: $transition
+
+  &__caption
+    display: flex
+    margin-top: 2.5rem
+    width: 100%
+    transition: $transition
+    &:hover,
+    &:focus,
+    &:active
+      color: $purple

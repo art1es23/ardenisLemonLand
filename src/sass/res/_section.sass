@@ -1,0 +1,29 @@
+@import "./src/sass/helpers/var"
+
+.section
+  display: flex
+  align-items: center
+  width: 100vw
+  min-height: 100vh
+  position: absolute
+  transform-origin: left center
+  transition: all 1.5s ease
+  z-index: 3
+  opacity: 0.25
+
+  &--active
+    z-index: 5
+    opacity: 1
+    .pages
+      padding-left: 27.5%
+      &__number
+        transition: $transition
+        color: $black
+        &:before
+          left: -67.5%
+
+  &--wrapper
+    width: 100%
+    height: 100vh
+    position: relative
+    display: flex

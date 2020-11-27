@@ -1,3 +1,3 @@
 export function asd() {
-    console.log('HELLLO IN HELLLLLLLL!!!!!!')
+    alert('HELLLO IN HELLLLLLLL!!!!!!')
 }

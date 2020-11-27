@@ -2,86 +2,171 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Hello, AMPs</title>
+    <title>LemonLand</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="stylesheet" href="./css/main.min.css">
 
 </head>
-<body style="overflow: hidden">
+<body>
 
     <header id="header" class="header">
         <nav class="navigation">
             <div class="navigation__logo logo">
-                <a href="./index2.html" class="logo__link">
+                <a href="./index.html" class="logo__link">
                     <svg class="">
-                        <use xlink:href="./img/sprite.svg#004-dinosaur"></use>
+                        <use xlink:href="./img/sprite.svg#iwatani-1"></use>
                     </svg>
                 </a>
             </div>
 
             <ul class="navigation__wrapper">
-                <li class="navigation__item"><a href="" class="navigation__link">Link1</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Link2</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Link3</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Link4</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Link5</a></li>
-                <li class="navigation__item"><a href="" class="navigation__link">Link6</a></li>
+                <li class="navigation__item"><a href="./index.html" class="navigation__link">Головна</a></li>
+                <li class="navigation__item">
+                    <a href="./services.html" class="navigation__link">Послуги</a>
+                    <ul class="nav-submenu">
+                        <li class="nav-submenu__item"><a href="./services.html#tab-1" class="nav-submenu__link">Дизайн</a></li>
+                        <li class="nav-submenu__item"><a href="./services.html#tab-2" class="nav-submenu__link">Розробка</a></li>
+                        <li class="nav-submenu__item"><a href="./services.html#tab-3" class="nav-submenu__link">Google</a></li>
+                        <li class="nav-submenu__item"><a href="./services.html#tab-4" class="nav-submenu__link">Реклама</a></li>
+                        <li class="nav-submenu__item"><a href="./services.html#tab-5" class="nav-submenu__link">Підтримка</a></li>
+                    </ul>
+                </li>
+                <li class="navigation__item"><a href="./projects.html" class="navigation__link">Проекти</a></li>
+                <li class="navigation__item"><a href="./about.html" class="navigation__link">Про нас</a></li>
+                <li class="navigation__item"><a href="./blog.html" class="navigation__link">Блог</a></li>
+                <li class="navigation__item"><a href="./contacts.html" class="navigation__link">Контакти</a></li>
             </ul>
         </nav>
     </header>
 
-    <main id="mainContent" class="main-content">
+    <main data-router-wrapper id="mainContent" class="main-content">
 
-        <div class="spinner">
-            <div class="spinner--wrapper">
-            </div>
+        <article data-router-view="home" class="spinner">
+                <div class="spinner--wrapper">
+                </div>
 
-            <section id="section1" class="section section1">
-                <div class="container">
-                    <a class="title">1</a>
-                </div>
-            </section>
-            <section id="section2" class="section section2">
-                <div class="container">
-                    <a class="title">2</a>
-                </div>
-            </section>
-            <section id="section3" class="section section3">
-                <div class="container">
-                    <a class="title">3</a>
-                </div>
-            </section>
-            <section id="section4" class="section section4">
-                <div class="container">
-                    <a class="title">4</a>
-                </div>
-            </section>
-            <section id="section5" class="section section5">
-                <div class="container">
-                    <a class="title">5</a>
-                </div>
-            </section>
-            <section id="section6" class="section section6">
-                <div class="container">
-                    <a class="title">6</a>
-                </div>
-            </section>
-        </div>
+                <div class="section--wrapper">
+                    <section id="section1" class="section section1 section--active">
+                        <div class="pages">
+                            <span class="pages__number">01</span>
+                            <a href="services.html#tab-1" class="pages--wrapper">
+                                <h2 class="pages__title">Section 1</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
+                    <section id="section2" class="section section2">
+                        <div class="pages">
+                            <span class="pages__number">02</span>
+                            <a href="services.html#tab-2" class="pages--wrapper">
+                                <h2 class="pages__title">Section 2</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
+                    <section id="section3" class="section section3">
+                        <div class="pages">
+                            <span class="pages__number">03</span>
+                            <a href="services.html#tab-3" class="pages--wrapper">
+                                <h2 class="pages__title">Section 3</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
+                    <section id="section4" class="section section4">
+                        <div class="pages">
+                            <span class="pages__number">04</span>
+                            <a href="services.html#tab-4" class="pages--wrapper">
+                                <h2 class="pages__title">Section 4</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
+                    <section id="section5" class="section section5">
+                        <div class="pages">
+                            <span class="pages__number">05</span>
+                            <a href="services.html#tab-5" class="pages--wrapper">
+                                <h2 class="pages__title">Section 5</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
+                    <section id="section6" class="section section6">
+                        <div class="pages">
+                            <span class="pages__number">06</span>
+                            <a href="" class="pages--wrapper">
+                                <h2 class="pages__title">Section 6</h2>
+                                <p class="pages__description">Some text Some text Some text Some text Some text Some text Some text Some text</p>
+                            </a>
+                            <picture class="pages__img"><img src="./img/mino.png" alt=""></picture>
+                        </div>
+                    </section>
 
+                </div>
+
+        </article>
 
     </main>
 
-    <footer id="footer" class="footer">
+    <footer id="footer" class="footer" style="position: fixed; z-index: 100">
         <div class="footer--wrapper">
+            <p class="copyright">&copy; Directed by qmpwwsd</p>
             <ul class="footer__menu social-menu">
-                <li class="social-menu__item"><a href="" class="social-menu__link">Link1</a></li>
-                <li class="social-menu__item"><a href="" class="social-menu__link">Link2</a></li>
-                <li class="social-menu__item"><a href="" class="social-menu__link">Link3</a></li>
-                <li class="social-menu__item"><a href="" class="social-menu__link">Link4</a></li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li class="social-menu__item">
+                    <a href="" class="social-menu__link">
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#reddit"></use>
+                        </svg>
+                    </a>
+                </li>
             </ul>
-            <p class="copyright">qmpwwsd</p>
+            <button class="btn btn--order">Зробити замовлення</button>
         </div>
     </footer>
+
+    <div class="modal--wrapper modal-order">
+        <form action="" name="formOrder" id="formOrder" class="modal">
+            <div class="btn--close">&times;</div>
+            <h2 class="modal__title">Залиште заявку</h2>
+            <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <input type="text" name="name" class="modal__input" placeholder="Name">
+            <input type="text" name="phone" class="modal__input" placeholder="Phone number">
+            <input type="text" name="email" class="modal__input" placeholder="Email">
+            <textarea name="comment" class="modal__comment" id="" cols="30" rows="4" placeholder="Your comment"></textarea>
+
+            <div class="input--wrapper">
+                <input class="checkbox checkbox--accept" type="checkbox" id="accept">
+                <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних даних</label>
+                <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
+            </div>
+        </form>
+    </div>
 
 <!--    <svg class="">
         <use xlink:href="./img/svg/sprite.svg#009-flamingo"></use>
@@ -90,8 +175,118 @@
         <use xlink:href="./img/svg/sprite.svg#004-dinosaur"></use>
     </svg>-->
 
-<!--    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>-->
+<!--
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="/googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+-->
     <script src="./js/main.js"></script>
+
+    <script>
+
+        function wheelMainPage() {
+            let s = document.querySelectorAll('.section');
+            let delay = false;
+
+            window.addEventListener('wheel', e => {
+                e.preventDefault();
+                e = e || window.event;
+                let s = document.querySelectorAll('.section');
+
+                if (delay) return;
+                delay = true;
+                setTimeout(function () {delay = false}, 300);
+
+                let delta = e.deltaY || e.detail;
+
+                for (let i = 0; i <= s.length; i++) {
+                    let rotateAngle = s[i].style.transform;
+
+                    if (delta < 0) {
+
+                        for (let j = i; j <= s.length; j++) {
+                            e.preventDefault();
+
+                            let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
+                            s[i].style.transform = `rotateZ(${joinArr - 60}deg)`;
+                        }
+                    } else {
+                        for (let j = i; j <= s.length; j++) {
+                            e.preventDefault();
+                            let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
+
+                            s[i].style.transform = `rotateZ(${joinArr + 60}deg)`;
+                        }
+                    }
+                    e.stopPropagation();
+
+                    if (s[i].style.transform === 'rotateZ(0deg)' || s[i].style.transform === 'rotateZ(360deg)') {
+                        s[i].classList.add('section--active')
+                    } else {
+                        s[i].classList.remove('section--active')
+                    }
+                }
+            })
+
+            for (let i = 0; i <= s.length; i++) {
+                s[i].style.transform = `rotateZ(${i * 60}deg)`;
+            }
+
+        }
+
+        wheelMainPage();
+
+    </script>
+<!--
+    <script>
+        $('li a').click(function() {
+            // animate content
+            $('.page__style').addClass('animate_content');
+            $('.page__description').fadeOut(100).delay(2800).fadeIn();
+
+            setTimeout(function() {
+                $('.page__style').removeClass('animate_content');
+            }, 3200);
+
+            //remove fadeIn class after 1500ms
+            setTimeout(function() {
+                $('.page__style').removeClass('fadeIn');
+            }, 1500);
+
+        });
+
+        // on click show page after 1500ms
+        $('.home_link').click(function() {
+            setTimeout(function() {
+                $('.home').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.projects_link').click(function() {
+            setTimeout(function() {
+                $('.projects').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.skills_link').click(function() {
+            setTimeout(function() {
+                $('.skills').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.about_link').click(function() {
+            setTimeout(function() {
+                $('.about').addClass('fadeIn');
+            }, 1500);
+        });
+
+        $('.contact_link').click(function() {
+            setTimeout(function() {
+                $('.contact').addClass('fadeIn');
+            }, 1500);
+        });
+    </script>
+-->
+
+
 </body>
 </html>

@@ -1,0 +1,83 @@
+@import "./src/sass/helpers/var"
+
+.pages
+  display: flex
+  width: 100%
+  height: 100vh
+  justify-content: space-between
+  align-items: center
+  padding: 12.5rem 10% 12.5rem 27.5%
+
+  &--wrapper
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-evenly
+    width: 100%
+    height: 50%
+
+  &__number
+    display: flex
+    width: 35%
+    justify-content: flex-start
+    align-items: center
+    text-align: left
+    font-size: 5rem
+    color: $purple
+    transition: $transition
+    position: relative
+    &:before
+      display: block
+      width: 1.5rem
+      content: ''
+      height: 1.5rem
+      position: absolute
+      top: 50%
+      left: -65%
+      transform: translateY(-1px)
+      border-radius: 50%
+      background-color: $yellow
+      z-index: 88
+
+  &__title
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    font-size: 5.5rem
+
+  &__description
+    width: 100%
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    text-align: center
+    font-size: 1.5rem
+    line-height: 2.5rem
+    padding: 0 5% 0 15%
+    position: relative
+    &:before
+      content: '\1433'
+      font-size: 2.5rem
+      display: block
+      width: 7.5%
+      height: 50%
+      position: absolute
+      top: 50%
+      left: 3.5%
+      transition: $transition
+      transform: translate(0, -50%)
+
+    &:hover
+      &:before
+        color: $yellow
+
+  &__img
+    width: 80%
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      object-fit: contain
+      width: 80%

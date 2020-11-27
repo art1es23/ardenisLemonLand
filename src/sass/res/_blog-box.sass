@@ -1,0 +1,67 @@
+@import "./src/sass/helpers/var"
+
+.blog-box
+  display: flex
+  width: 100%
+  justify-content: space-between
+  padding: 2.5%
+  flex-wrap: wrap
+
+  &__item
+    display: flex
+    flex-direction: column
+    padding: 5%
+    background-color: $white
+    transition: $transition
+    width: calc(100% / 3)
+    border: 1px solid $darkgray
+
+    h3
+      font-size: 2rem
+      width: 100%
+      text-align: left
+
+    p
+      width: 100%
+      text-align: justify
+      font-size: 1rem
+      padding: 1.25rem 0
+
+    &:nth-child(5n)
+      background-color: orange
+      width: calc(100% / 3 * 2)
+    &:nth-child(6n)
+      background-color: rebeccapurple
+      width: calc(100% / 3 * 2)
+    &:nth-child(10n)
+      background-color: #FF0043
+      width: calc(100% / 3)
+    &:nth-child(13n)
+      background-color: #fbd46d
+      width: calc(100% / 3 * 2)
+    &:nth-child(15n)
+      background-color: #4f8a8b
+      width: calc(100% / 3)
+    &:nth-child(18n)
+      background-color: #c629ad
+      width: calc(100% / 3)
+    &:nth-child(19n)
+      background-color: #aaddff
+      width: calc(100% / 3 * 2)
+    &:nth-child(20n)
+      background-color: #aaddff
+      width: calc(100% / 3 * 2)
+    &:nth-child(24n)
+      background-color: indianred
+      width: calc(100% / 3)
+    &:nth-child(25n)
+      background-color: indianred
+      width: calc(100% / 3)
+    &:nth-child(27n)
+      background-color: indianred
+      width: calc(100% / 3 * 2)
+
+    &:hover,
+    &:focus,
+    &:active
+      box-shadow: 0 0 30px 0 rgba($purple, 0.5)

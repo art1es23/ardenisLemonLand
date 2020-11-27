@@ -1,0 +1,31 @@
+@import "./src/sass/helpers/var"
+
+.link
+  &--wrapper
+    display: flex
+    width: 100%
+    padding: 1rem 0
+    justify-content: flex-start
+    align-items: center
+
+  &__icon
+    display: flex
+    width: 2.5rem
+    height: 2.5rem
+    background:
+      image: url("../img/icon-pdf.png")
+      position: center
+      size: contain
+      repeat: no-repeat
+
+  &__item
+    display: flex
+    padding: 0 1rem
+    width: 30%
+    font-size: 1.25rem
+    color: $white
+    &:hover
+      color: $black
+
+  &--color
+    color: $black

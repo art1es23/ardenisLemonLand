@@ -1,0 +1,53 @@
+@import "./src/sass/helpers/var"
+
+.btn
+  display: flex
+  justify-content: center
+  align-items: center
+  text-align: center
+  border: none
+  transition: $transition
+  &:hover,
+  &:focus,
+  &:active
+    cursor: pointer
+
+  &--submit
+    font-size: 1.5rem
+    width: 40%
+    padding: 0.5rem 1rem
+    background-color: rgba($white, 1)
+    border-radius: 7.5px
+    &:hover,
+    &:focus,
+    &:active
+      background-color: rgba($orange, 0.85)
+      color: $white
+
+  &--close
+    position: absolute
+    width: 5rem
+    height: 5rem
+    color: $white
+    background-color: transparent
+    border: none
+    font-size: 3.5rem
+    line-height: 4rem
+    top: 10%
+    right: 12.5%
+    &:hover,
+    &:focus,
+    &:active
+      cursor: pointer
+
+  &--order
+    width: 20%
+    font-size: 1rem
+    background-color: rgba($purple, 0.75)
+    padding: 1rem 1.5rem
+    color: $white
+    border-radius: 5px
+    &:hover,
+    &:focus,
+    &:active
+      background-color: rgba($purple, 1)

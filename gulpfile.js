@@ -21,7 +21,7 @@ const fs = require('fs');
 const del = require('del');
 const webpack = require('webpack');
 const webpackStream = require('webpack-stream');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const tinyPNG = require('gulp-tinypng-compress');
 
 sass.compiler = require('node-sass');
