@@ -12,20 +12,32 @@
     display: flex
     width: 2.5rem
     height: 2.5rem
-    background:
-      image: url("../img/icon-pdf.png")
-      position: center
-      size: contain
-      repeat: no-repeat
+    background-image: url("../img/icon-pdf.png")
+    background-position: center
+    background-size: contain
+    background-repeat: no-repeat
 
   &__item
     display: flex
+    align-items: center
+    justify-content: flex-start
     padding: 0 1rem
     width: 30%
     font-size: 1.25rem
     color: $white
+    height: 100%
     &:hover
       color: $black
 
   &--color
     color: $black
+
+@media screen and (max-width: 1336px)
+  .link
+    &__item
+      width: 40%
+      font-size: 1rem
+  @media screen and (max-width: 1224px)
+    .link
+      &--wrapper
+        padding: 0.5rem 0

@@ -3,20 +3,22 @@
 .page
   width: 100%
   position: relative
-  min-height: 100vh
 
   &--services
   &--projects
   &--about
     display: flex
     justify-content: flex-end
-    background:
-      image: url("../img/pexels-photo-5474031.jpeg")
-      repeat: no-repeat
-      size: cover
-      position: center
+    background-image: url("../img/pexels-photo-5474031.jpeg")
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
   &--blog
   &--contacts
     display: flex
     justify-content: flex-end
     background-color: $white
+
+@media screen and (max-width: 1024px)
+  .page
+    padding-top: 3.5%

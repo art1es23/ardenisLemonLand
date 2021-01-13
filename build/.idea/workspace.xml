@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="251b0ce0-6788-4ca1-bd90-92a419c4d990" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/main.min.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/main.min.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/main.js.map" beforeDir="false" afterPath="$PROJECT_DIR$/js/main.js.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/services.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/blog.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/blog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/contacts.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/contacts.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/js/func.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/js/_func.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../src/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/projects.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/projects.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_about.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_about.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_blog-box.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_blog-box.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_btn.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_btn.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_link.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_link.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_modal.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_modal.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_nav.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_our-projects.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_our-projects.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_page.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_page.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_pages.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_pages.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_project.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_project.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_section.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_section.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_services-box.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_services-box.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_services.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_services.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_social-menu.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_social-menu.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_spinner.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_spinner.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/sass/res/_tabs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../src/sass/res/_tabs.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../src/services.html" beforeDir="false" afterPath="$PROJECT_DIR$/../src/services.html" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1lmsBiL4mIQiqIA2LcoFJL1CoBQ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="251b0ce0-6788-4ca1-bd90-92a419c4d990" name="Default Changelist" comment="" />
+      <created>1608213467431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1608213467431</updated>
+      <workItem from="1608213468590" duration="61000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2663" y="297" width="424" height="479" key="FileChooserDialogImpl" timestamp="1608213528046">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2663" y="297" width="424" height="479" key="FileChooserDialogImpl/1920.0.1920.1080/0.0.1920.1080@1920.0.1920.1080" timestamp="1608213528046" />
+  </component>
+</project>

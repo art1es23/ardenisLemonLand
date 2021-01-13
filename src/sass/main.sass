@@ -19,6 +19,9 @@
 @import "res/page"
 @import "res/section"
 
+@import 'res/services-content'
+@import 'res/hero'
+
 *, *:before, *:after
   box-sizing: border-box
   margin: 0
@@ -36,11 +39,15 @@ body
   overflow-x: hidden
   scroll-behavior: smooth
 
+.wrapper
+  min-height: auto
+  position: relative
+
 .main
   &-content
     position: relative
     width: 100%
-    padding-bottom: 5%
+    min-height: auto
 
   &--padding
     padding: 0
@@ -70,34 +77,32 @@ p
   line-height: 1.5rem
   color: $darkgray
 
-
-.container
-  width: 100%
-  height: 100%
-  display: flex
-
-
-
-.scroll--hidden
-  overflow: hidden
-
-.rotate
-  transform: translateX(20px)
-
 .container
   display: flex
   width: 65%
   margin: 0 auto
   flex-direction: column
 
+  &--direction
+    flex-direction: row
+
+.scroll--hidden
+  overflow: hidden
+
+.hide
+  display: none
+
+.rotate
+  transform: translateX(20px)
+
 @keyframes show
   from
     opacity: 0
-    transform: translateX(-50%)
+    transform: translateY(5%)
     visibility: hidden
   to
     opacity: 1
-    transform: translateX(0)
+    transform: translateY(0)
     visibility: visible
 
 @keyframes showPage
@@ -122,7 +127,6 @@ p
     justify-content: flex-start
     align-items: center
 
-
 .map
   width: 100%
   height: 100%
@@ -146,7 +150,61 @@ p
   p
     color: $black
 
+.breadcrumbs
+  display: flex
+  padding: 1rem 0
+  justify-content: flex-start
+  &__link
+    display: flex
+    .bold,
+    .bold + span
+      color: $white
+      transition: $transition
+      &:hover,
+      &:focus
+        color: $black
+    span
+      margin-right: 0.5rem
+      font-size: 1vw
 
+.content--height
+  min-height: 90vh
 
+.transition
+  display: flex
+  position: fixed
+  z-index: 9999
+  height: 100%
+  width: 100%
+  top: 0
+  left: 0
+  margin: 0
+  pointer-events: none
+
+  li
+    transform: scaleY(0)
+    background-color: $purple
+    transform-origin: bottom left
+    height: 100%
+    width: 20%
+
+.img--wrapper
+  overflow: hidden
+  width: 100%
+  img
+    width: 100%
+    object-fit: cover
+
+@media screen and (max-width: 1600px)
+  .container
+    width: 80%
+  .content--height
+    min-height: 88vh
+  @media screen and (max-width: 1224px)
+    .container
+      width: 85%
+    @media screen and (max-width: 1224px)
+      .container
+        width: 90%
 
 @import "helpers/fonts"
