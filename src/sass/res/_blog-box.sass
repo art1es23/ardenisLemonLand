@@ -3,10 +3,9 @@
 .blog-box
   display: grid
   width: 100%
-  justify-content: space-between
-  padding: 2.5%
-  grid-template-columns: repeat(3, 32.5%)
-  grid-gap: 2.5%
+  padding: 0 2.5%
+  grid-template-columns: repeat(3, 1fr)
+  grid-gap: 2.5rem
 
   &__item
     display: flex
@@ -14,7 +13,9 @@
     background-color: $white
     transition: $transition
     position: relative
-    padding: 10% 5%
+    width: 100%
+    margin: auto
+    padding: 10%
 
     h3
       font-size: 2rem
@@ -23,7 +24,7 @@
       position: absolute
       bottom: 15%
       left: 0
-      padding: 5% 10%
+      padding: 0 10%
       color: $white
 
     // p

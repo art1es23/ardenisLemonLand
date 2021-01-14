@@ -1,21 +1,19 @@
-import gsap from 'gsap';
-
-const wheelMainPage = () => {
+const wheelMainPage = (page) => {
     console.log("IM WHEEL SPINNER");
-    let s = document.querySelectorAll('.section');
+    const s = page.querySelectorAll('.section');
     let delay = false;
 
     let rotateDeg = 360 / s.length;
 
-    window.addEventListener('wheel', e => {
+    page.addEventListener('wheel', e => {
         e.preventDefault();
         e = e || window.event;
-        let s = document.querySelectorAll('.section');
+        let s = page.querySelectorAll('.section');
 
         if (delay) return;
         delay = true;
         setTimeout(function () {
-            delay = false
+            delay = false;
         }, 1000);
 
         console.log(rotateDeg);
@@ -36,8 +34,8 @@ const wheelMainPage = () => {
             } else {
                 for (let j = i; j <= s.length; j++) {
                     e.preventDefault();
-                    let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
 
+                    let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
                     s[i].style.transform = `rotateZ(${joinArr + rotateDeg}deg)`;
                 }
             }
@@ -49,12 +47,19 @@ const wheelMainPage = () => {
                 s[i].classList.remove('section--active');
             }
         }
-    })
+    });
 
-    for (let i = 0; i <= s.length; i++) {
-        s[i].style.transform = `rotateZ(${i * rotateDeg}deg)`;
-    }
+    s.forEach(element => {
+        let sliderData = element.dataset.slider;
 
-}
+        console.log(sliderData);
+        element.style.transform = `rotateZ(${sliderData * rotateDeg}deg)`;
+    });
+
+    // for (let i = 0; i <= s.length; i++) {
+    //     s[i].style.transform = `rotateZ(${i * rotateDeg}deg)`;
+    // }
+
+};
 
 export default wheelMainPage;

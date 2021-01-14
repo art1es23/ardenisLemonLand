@@ -11,7 +11,7 @@
     display: flex
     justify-self: flex-end
     justify-content: space-between
-    width: 45%
+    width: 50%
     align-items: center
 
   &__item
@@ -22,7 +22,7 @@
     &:focus,
     &:active
       & > .nav-submenu
-        transform: translate(-10%, 0) scale(1)
+        transform: translate(-5%, 12.5%) scale(1)
         opacity: 1
         visibility: visible
 
@@ -37,7 +37,7 @@
     position: relative
     width: 100%
     padding: 0.75rem 1rem
-    font-size: 1.15rem
+    font-size: 1vw
     color: $lightGrey
 
     &--color
@@ -70,9 +70,9 @@
   opacity: 0
   visibility: hidden
   transform-origin: bottom center
-  transform: translate(-10%, -100%) scale(0)
+  transform: translate(0, -100%) scale(0)
   position: absolute
-  top: 145%
+  top: 100%
   left: 0
   flex-direction: column
   background-color: $white
@@ -86,8 +86,8 @@
     display: flex
     font-weight: 400
     width: 100%
-    font-size: 1.15rem
-    padding: 0.75rem 2.5rem
+    font-size: 1vw
+    padding: 0.75rem 1.25rem
     justify-content: flex-start
     align-items: center
 
@@ -111,12 +111,24 @@
     fill: rgba($purple, 0.75)
     height: 2rem
 
-@media screen and ( max-width: 1600px)
+@media screen and ( max-width: 1366px)
   .navigation
     &__wrapper
       width: 60%
+    &__link
+      font-size: 1.25vw
 
-  @media screen and (max-width: 1024px)
-    .navigation
-      &__wrapper
-        width: 80%
+@media screen and ( max-width: 1224px)
+  .navigation
+    &__wrapper
+      width: 70%
+    &__link
+      font-size: 1.4vw
+
+@media screen and (max-width: 1024px)
+  .navigation
+    &__wrapper
+      width: 80%
+
+    &__link
+      font-size: 1.75vw

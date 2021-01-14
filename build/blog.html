@@ -63,300 +63,323 @@
 
         <main id="mainContent" class="main-content">
 
-            <article class="page page--blog">
-                <div class="tabs">
-                    <ul class="tabs-triggers">
-                        <li data-filter="all" class="tabs-triggers__item">Всі</li>
-                        <li data-filter="design" class="tabs-triggers__item">Дизайн</li>
-                        <li data-filter="develop" class="tabs-triggers__item">Розробка</li>
-                        <li data-filter="google" class="tabs-triggers__item">Google</li>
-                        <li data-filter="promotion" class="tabs-triggers__item">Реклама</li>
-                        <li data-filter="help" class="tabs-triggers__item">Підтримка</li>
-                    </ul>
+            <div class="page page--blog">
+                <ul class="tabs-triggers">
+                    <li data-filter-id="Всі" class="tabs-triggers__item">Всі</li>
+                    <li data-filter-id="Дизайн" class="tabs-triggers__item">Дизайн</li>
+                    <li data-filter-id="Розробка" class="tabs-triggers__item">Розробка</li>
+                    <li data-filter-id="Google" class="tabs-triggers__item">Google</li>
+                    <li data-filter-id="Реклама" class="tabs-triggers__item">Реклама</li>
+                    <li data-filter-id="Підтримка" class="tabs-triggers__item">Підтримка</li>
+                </ul>
 
-                    <div class="tabs-content">
-                        <div class="container">
-                            <section id="blog-tab-1" class="services tabs-content__item tabs-content__item--active">
-                                <h2 class="services__title">Дизайн</h2>
-                                <p class="services__description">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                    elit. At omnis quidem rem voluptatibus? Beatae est exercitationem expedita illo
-                                    maxime nobis odit porro praesentium qui rerum? Lorem ipsum dolor sit amet,
-                                    consectetur adipisicing elit. A aliquam culpa deserunt ex ipsa libero nemo
-                                    praesentium quia voluptates voluptatibus.</p>
+                <div class="tabs-content">
+                    <div class="container">
+                        <section id="blog-tab-1" class="services tabs-content__item">
+                            <div class="title--wrapper">
 
-                                <div class="services__box-items blog-box">
-                                    <article class="blog-box__item design develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                <h2 class="services__title">Всі</h2>
+                                <span class="services__caption"><span class="filter-number"></span>projects</span>
 
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Develop</span>
-                                        </div>
+                            </div>
+                            <div class="blog-box">
+                                <article data-filter="Дизайн Розробка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн Розробка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item develop google">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Google</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item help google">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Google</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
 
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Help</span>
-                                            <span class="categories__item">Google</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Підтримка Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                        </div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Підтримка</span>
+                                        <span class="categories__item">Google</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item google develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Google</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                    </div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item develop promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Promotion</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Google</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
 
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item help develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Реклама</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
 
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Help</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item google promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Google</span>
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item help">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Help</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item develop help">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Help</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item google">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Google</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item google help">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Google</span>
-                                            <span class="categories__item">Help</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item help develop">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Help</span>
-                                            <span class="categories__item">Develop</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
-                                    <article class="blog-box__item design promotion">
-                                        <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
-                                        <p class="date-publish">
-                                            <span class="date-publish__number">28</span>
-                                            May<br>2020
-                                        </p>
-                                        <div class="categories">
-                                            <span class="categories__item">Design</span>
-                                            <span class="categories__item">Promotion</span>
-                                        </div>
-                                        <h3>Some title for article blog</h3>
-                                    </article>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Підтримка Розробка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
 
-                                </div>
-                            </section>
-                        </div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Підтримка</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн Розробка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Реклама Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Google</span>
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Підтримка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Підтримка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка Підтримка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Підтримка</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Google</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Підтримка Google" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Google</span>
+                                        <span class="categories__item">Підтримка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Розробка Підтримка" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Підтримка</span>
+                                        <span class="categories__item">Розробка</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+                                <article data-filter="Дизайн Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+
+                                <article data-filter="Дизайн Реклама" class="blog-box__item">
+                                    <div class="blog-box__img img--wrapper"><img src="./img/mino.png" alt=""></div>
+                                    <p class="date-publish">
+                                        <span class="date-publish__number">28</span>
+                                        May<br>2020
+                                    </p>
+                                    <div class="categories">
+                                        <span class="categories__item">Дизайн</span>
+                                        <span class="categories__item">Реклама</span>
+                                    </div>
+                                    <h3>Some title for article blog</h3>
+                                </article>
+
+
+                            </div>
+                        </section>
                     </div>
                 </div>
-            </article>
+            </div>
 
         </main>
 
@@ -397,89 +420,29 @@
             </div>
         </footer>
 
-        <div class="modal--wrapper modal-order">
-            <form action="" name="formOrder" id="formOrder" class="modal">
-                <div class="btn--close">&times;</div>
-                <h2 class="modal__title">Залиште заявку</h2>
-                <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <input type="text" name="name" class="modal__input" placeholder="Name">
-                <input type="text" name="phone" class="modal__input" placeholder="Phone number">
-                <input type="text" name="email" class="modal__input" placeholder="Email">
-                <textarea name="comment" class="modal__comment" id="" cols="30" rows="4"
-                    placeholder="Your comment"></textarea>
-
-                <div class="input--wrapper">
-                    <input class="checkbox checkbox--accept" type="checkbox" id="accept">
-                    <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних
-                        даних</label>
-                    <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
-                </div>
-            </form>
-        </div>
     </div>
-    <!--    <svg class="">
-        <use xlink:href="./img/svg/sprite.svg#009-flamingo"></use>
-    </svg>
-    <svg class="">
-        <use xlink:href="./img/svg/sprite.svg#004-dinosaur"></use>
-    </svg>-->
+    <div class="modal--wrapper modal-order">
+        <form action="" name="formOrder" id="formOrder" class="modal">
+            <div class="btn--close">&times;</div>
+            <h2 class="modal__title">Залиште заявку</h2>
+            <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <input type="text" name="name" class="modal__input" placeholder="Name">
+            <input type="text" name="phone" class="modal__input" placeholder="Phone number">
+            <input type="text" name="email" class="modal__input" placeholder="Email">
+            <textarea name="comment" class="modal__comment" id="" cols="30" rows="4"
+                placeholder="Your comment"></textarea>
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
--->
+            <div class="input--wrapper">
+                <input class="checkbox checkbox--accept" type="checkbox" id="accept">
+                <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних
+                    даних</label>
+                <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
+            </div>
+        </form>
+    </div>
+
+
     <script src="./js/main.js"></script>
-    <!--
-    <script>
-        $('li a').click(function() {
-            // animate content
-            $('.page__style').addClass('animate_content');
-            $('.page__description').fadeOut(100).delay(2800).fadeIn();
-
-            setTimeout(function() {
-                $('.page__style').removeClass('animate_content');
-            }, 3200);
-
-            //remove fadeIn class after 1500ms
-            setTimeout(function() {
-                $('.page__style').removeClass('fadeIn');
-            }, 1500);
-
-        });
-
-        // on click show page after 1500ms
-        $('.home_link').click(function() {
-            setTimeout(function() {
-                $('.home').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.projects_link').click(function() {
-            setTimeout(function() {
-                $('.projects').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.skills_link').click(function() {
-            setTimeout(function() {
-                $('.skills').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.about_link').click(function() {
-            setTimeout(function() {
-                $('.about').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.contact_link').click(function() {
-            setTimeout(function() {
-                $('.contact').addClass('fadeIn');
-            }, 1500);
-        });
-    </script>
--->
-
 
 </body>
 

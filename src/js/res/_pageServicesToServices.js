@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import tabsToggle from './_tabsToggle';
+import modalOrder from './_modalOrder';
 
 const pageServicesToServices = (container) => {
     const header = container.querySelector('.header');
@@ -21,6 +22,7 @@ const pageServicesToServices = (container) => {
         },
     });
 
+    modalOrder();
     tabsToggle();
 
     tl

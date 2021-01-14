@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import filter from './_filter';
+import modalOrder from './_modalOrder';
 
 const pageBlog = (container) => {
     const header = container.querySelector('.header');
@@ -20,6 +21,7 @@ const pageBlog = (container) => {
         },
     });
 
+    modalOrder();
     filter(container);
 
     tl
@@ -49,7 +51,7 @@ const pageBlog = (container) => {
         }, {
             opacity: 1,
             yPercent: 0,
-            stagger: 0.25
+            stagger: 0.15
         })
 
 

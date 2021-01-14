@@ -5,21 +5,37 @@ const filter = (page) => {
 
     const filterTriggers = getElement('.tabs-triggers__item');
     const filterBox = getElement('.blog-box__item') || getElement('.project--filter');
+    const countNumber = page.querySelector('.filter-number');
+    const title = page.querySelector('.services__title');
 
-    console.log(getElement('.project--filter').length);
+    let countItems = filterBox.length;
 
-    console.log(getElement('.blog-box__item').length);
+    countNumber.innerHTML = `${countItems}`;
+
     filterTriggers.forEach(item => {
         item.addEventListener('click', (e) => {
-            let filterData = e.target.dataset.filter;
-            console.log(filterData);
+            let filterData = e.target.dataset.filterId;
 
+            title.innerHTML = `${filterData}`;
+
+            let count = 0;
             filterBox.forEach(element => {
+
+                let arr = element.dataset.filter;
+                let subArr = arr.split(' ');
+
                 element.classList.remove('hide');
-                if (!element.classList.contains(filterData) && filterData !== "all") {
+                if (!(subArr.indexOf(filterData) !== -1) && filterData !== "Всі") {
                     element.classList.add('hide');
                 }
+
+                if (!element.classList.contains('hide')) {
+                    count++;
+                }
+
             });
+
+            countNumber.innerHTML = `${count}`;
 
         });
 

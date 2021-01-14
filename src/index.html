@@ -41,16 +41,16 @@
                     <li class="navigation__item">
                         <a href="./services.html" class="navigation__link">Послуги</a>
                         <ul class="nav-submenu">
-                            <li class="nav-submenu__item"><a href="./services.html#tab-1"
-                                    class="nav-submenu__link">Дизайн</a></li>
-                            <li class="nav-submenu__item"><a href="./services.html#tab-2"
+                            <li class="nav-submenu__item"><a href="./services.html" class="nav-submenu__link">Дизайн</a>
+                            </li>
+                            <li class="nav-submenu__item"><a href="./develop.html"
                                     class="nav-submenu__link">Розробка</a></li>
-                            <li class="nav-submenu__item"><a href="./services.html#tab-3"
-                                    class="nav-submenu__link">Google</a></li>
-                            <li class="nav-submenu__item"><a href="./services.html#tab-4"
-                                    class="nav-submenu__link">Реклама</a></li>
-                            <li class="nav-submenu__item"><a href="./services.html#tab-5"
-                                    class="nav-submenu__link">Підтримка</a></li>
+                            <li class="nav-submenu__item"><a href="./google.html" class="nav-submenu__link">Google</a>
+                            </li>
+                            <li class="nav-submenu__item"><a href="./promo.html" class="nav-submenu__link">Реклама</a>
+                            </li>
+                            <li class="nav-submenu__item"><a href="./help.html" class="nav-submenu__link">Підтримка</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="navigation__item"><a href="./projects.html" class="navigation__link">Проекти</a></li>
@@ -68,74 +68,61 @@
                 </div>
 
                 <div class="section--wrapper">
-                    <section id="section1" class="section section1 section--active">
+                    <section data-slider="0" id="section1" class="section section1 section--active">
                         <div class="pages">
                             <span class="pages__number">01</span>
-                            <a href="services.html#tab-1" class="pages--wrapper">
-                                <h2 class="pages__title">Section 1</h2>
+                            <a href="./services.html" class="pages--wrapper">
+                                <h2 class="pages__title">Дизайн</h2>
                                 <p class="pages__description">Some text Some text Some text Some text Some text Some
                                     text Some text Some text</p>
                             </a>
                         </div>
                     </section>
-                    <section id="section2" class="section section2">
+                    <section data-slider="1" id="section2" class="section section2">
                         <div class="pages">
                             <span class="pages__number">02</span>
-                            <a href="services.html#tab-2" class="pages--wrapper">
-                                <h2 class="pages__title">Section 2</h2>
+                            <a href="./develop.html" class="pages--wrapper">
+                                <h2 class="pages__title">Розробка</h2>
                                 <p class="pages__description">Some text Some text Some text Some text Some text Some
                                     text Some text Some text</p>
                             </a>
                         </div>
                     </section>
-                    <section id="section3" class="section section3">
+                    <section data-slider="2" id="section3" class="section section3">
                         <div class="pages">
                             <span class="pages__number">03</span>
-                            <a href="services.html#tab-3" class="pages--wrapper">
-                                <h2 class="pages__title">Section 3</h2>
+                            <a href="./google.html" class="pages--wrapper">
+                                <h2 class="pages__title">Google</h2>
                                 <p class="pages__description">Some text Some text Some text Some text Some text Some
                                     text Some text Some text</p>
                             </a>
                         </div>
                     </section>
-                    <section id="section4" class="section section4">
+                    <section data-slider="3" id="section4" class="section section4">
                         <div class="pages">
                             <span class="pages__number">04</span>
-                            <a href="services.html#tab-4" class="pages--wrapper">
-                                <h2 class="pages__title">Section 4</h2>
+                            <a href="./promo.html" class="pages--wrapper">
+                                <h2 class="pages__title">Реклама</h2>
                                 <p class="pages__description">Some text Some text Some text Some text Some text Some
                                     text Some text Some text</p>
                             </a>
                         </div>
                     </section>
-                    <section id="section5" class="section section5">
+                    <section data-slider="4" id="section5" class="section section5">
                         <div class="pages">
                             <span class="pages__number">05</span>
-                            <a href="services.html#tab-5" class="pages--wrapper">
-                                <h2 class="pages__title">Section 5</h2>
+                            <a href="./help.html" class="pages--wrapper">
+                                <h2 class="pages__title">Підтримка</h2>
                                 <p class="pages__description">Some text Some text Some text Some text Some text Some
                                     text Some text Some text</p>
                             </a>
                         </div>
                     </section>
-                    <section id="section6" class="section section6">
-                        <div class="pages">
-                            <span class="pages__number">06</span>
-                            <a href="" class="pages--wrapper">
-                                <h2 class="pages__title">Section 6</h2>
-                                <p class="pages__description">Some text Some text Some text Some text Some text Some
-                                    text Some text Some text</p>
-                            </a>
-                        </div>
-                    </section>
-
                 </div>
-
             </article>
-
         </main>
 
-        <footer id="footer" class="footer">
+        <footer id="footer" class="footer footer--position">
             <div class="footer--wrapper">
                 <p class="copyright">&copy; Directed by qmpwwsd</p>
                 <ul class="footer__menu social-menu">
@@ -172,146 +159,28 @@
             </div>
         </footer>
 
-        <div class="modal--wrapper modal-order">
-            <form action="" name="formOrder" id="formOrder" class="modal">
-                <div class="btn--close">&times;</div>
-                <h2 class="modal__title">Залиште заявку</h2>
-                <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
-                <input type="text" name="name" class="modal__input" placeholder="Name">
-                <input type="text" name="phone" class="modal__input" placeholder="Phone number">
-                <input type="text" name="email" class="modal__input" placeholder="Email">
-                <textarea name="comment" class="modal__comment" id="" cols="30" rows="4"
-                    placeholder="Your comment"></textarea>
-
-                <div class="input--wrapper">
-                    <input class="checkbox checkbox--accept" type="checkbox" id="accept">
-                    <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних
-                        даних</label>
-                    <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
-                </div>
-            </form>
-        </div>
+    </div>
+    <div class="modal--wrapper modal-order">
+        <form action="" name="formOrder" id="formOrder" class="modal">
+            <div class="btn--close">&times;</div>
+            <h2 class="modal__title">Залиште заявку</h2>
+            <p class="modal__description">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <input type="text" name="name" class="modal__input" placeholder="Name">
+            <input type="text" name="phone" class="modal__input" placeholder="Phone number">
+            <input type="text" name="email" class="modal__input" placeholder="Email">
+            <textarea name="comment" class="modal__comment" id="" cols="30" rows="4"
+                placeholder="Your comment"></textarea>
+            <div class="input--wrapper">
+                <input class="checkbox checkbox--accept" type="checkbox" id="accept">
+                <label for="accept">Нажимаючи на кнопку "Відправити", я даю згоду на обробку персональних
+                    даних</label>
+                <input type="submit" name="submit" class="btn btn--submit" value="Відправити">
+            </div>
+        </form>
     </div>
 
-    <!--    <svg class="">
-        <use xlink:href="./img/svg/sprite.svg#009-flamingo"></use>
-    </svg>
-    <svg class="">
-        <use xlink:href="./img/svg/sprite.svg#004-dinosaur"></use>
-    </svg>-->
 
-    <!--
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script type="text/javascript" src="/googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
--->
     <script src="./js/main.js"></script>
-
-    <script>
-        /*
-        function wheelMainPage() {
-            let s = document.querySelectorAll('.section');
-            let delay = false;
-
-            window.addEventListener('wheel', e => {
-                e.preventDefault();
-                e = e || window.event;
-                let s = document.querySelectorAll('.section');
-
-                if (delay) return;
-                delay = true;
-                setTimeout(function () {delay = false}, 300);
-
-                let delta = e.deltaY || e.detail;
-
-                for (let i = 0; i <= s.length; i++) {
-                    let rotateAngle = s[i].style.transform;
-
-                    if (delta < 0) {
-
-                        for (let j = i; j <= s.length; j++) {
-                            e.preventDefault();
-
-                            let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
-                            s[i].style.transform = `rotateZ(${joinArr - 60}deg)`;
-                        }
-                    } else {
-                        for (let j = i; j <= s.length; j++) {
-                            e.preventDefault();
-                            let joinArr = parseInt(rotateAngle.split("").slice(8, length - 4).join(''));
-
-                            s[i].style.transform = `rotateZ(${joinArr + 60}deg)`;
-                        }
-                    }
-                    e.stopPropagation();
-
-                    if (s[i].style.transform === 'rotateZ(0deg)' || s[i].style.transform === 'rotateZ(360deg)') {
-                        s[i].classList.add('section--active')
-                    } else {
-                        s[i].classList.remove('section--active')
-                    }
-                }
-            })
-
-            for (let i = 0; i <= s.length; i++) {
-                s[i].style.transform = `rotateZ(${i * 60}deg)`;
-            }
-
-        }
-
-        wheelMainPage();
-*/
-    </script>
-    <!--
-    <script>
-        $('li a').click(function() {
-            // animate content
-            $('.page__style').addClass('animate_content');
-            $('.page__description').fadeOut(100).delay(2800).fadeIn();
-
-            setTimeout(function() {
-                $('.page__style').removeClass('animate_content');
-            }, 3200);
-
-            //remove fadeIn class after 1500ms
-            setTimeout(function() {
-                $('.page__style').removeClass('fadeIn');
-            }, 1500);
-
-        });
-
-        // on click show page after 1500ms
-        $('.home_link').click(function() {
-            setTimeout(function() {
-                $('.home').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.projects_link').click(function() {
-            setTimeout(function() {
-                $('.projects').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.skills_link').click(function() {
-            setTimeout(function() {
-                $('.skills').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.about_link').click(function() {
-            setTimeout(function() {
-                $('.about').addClass('fadeIn');
-            }, 1500);
-        });
-
-        $('.contact_link').click(function() {
-            setTimeout(function() {
-                $('.contact').addClass('fadeIn');
-            }, 1500);
-        });
-    </script>
--->
-
 
 </body>
 

@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import modalOrder from './_modalOrder';
 
 const pageServiceArticle = (container) => {
     const header = container.querySelector('.header');
@@ -15,6 +16,8 @@ const pageServiceArticle = (container) => {
             delay: 0
         },
     });
+
+    modalOrder();
 
     tl
         .fromTo(container, 3, {

@@ -1,11 +1,11 @@
 import gsap from 'gsap';
 import wheelMainPage from './_wheelMainPage';
+import modalOrder from './_modalOrder';
 
 const pageHome = (container) => {
+
     const header = container.querySelector('.header');
-
     const footer = container.querySelector('.footer');
-
 
     const tl = gsap.timeline({
         defaults: {
@@ -14,9 +14,9 @@ const pageHome = (container) => {
             delay: 0
         },
     });
-    wheelMainPage();
 
-
+    modalOrder();
+    wheelMainPage(container);
     tl
         .fromTo(container, 1, {
             xPercent: -100,
@@ -40,8 +40,6 @@ const pageHome = (container) => {
         });
 
     return tl;
-
-
 };
 
 export default pageHome;

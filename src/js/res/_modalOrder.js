@@ -17,14 +17,14 @@ const modalOrder = () => {
     window.onclick = function (event) {
         if (event.target == modalOrder) {
             modalOrder.classList.remove('modal-order--active');
-            container.body.classList.remove('scroll--hidden')
+            document.body.classList.remove('scroll--hidden')
         }
     }
 
     closeBtn.addEventListener('click', (e) => {
         if (e.target == closeBtn) {
             modalOrder.classList.remove('modal-order--active');
-            container.body.classList.remove('scroll--hidden')
+            document.body.classList.remove('scroll--hidden')
         }
     })
 };
