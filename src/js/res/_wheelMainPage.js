@@ -47,14 +47,6 @@ const wheelMainPage = (page) => {
                 s[i].classList.remove('section--active');
             }
 
-            // if (s[0].style.transform === 'rotateZ(360deg)' || s[0].style.transform === 'rotateZ(-360deg)') {
-            //     s.forEach(k => {
-            //         let sliderData = k.dataset.slider;
-
-            //         console.log(sliderData);
-            //         k.style.transform = `rotateZ(${sliderData * rotateDeg}deg)`;
-            //     });
-            // }
         }
     });
 

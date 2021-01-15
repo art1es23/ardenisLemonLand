@@ -55,7 +55,8 @@
     &:active
       background-color: rgba($purple, 1)
 
-  &--filter
+  &--filter,
+  &--footer
     display: none
     border: none
     height: 5rem
@@ -80,6 +81,12 @@
         color: $purple
       svg
         fill: $purple
+
+  &--footer
+    height: 3.5rem
+    svg
+      transform: translateY(180deg)
+      width: 30%
 
 @media screen and ( max-width: 1600px)
   .btn

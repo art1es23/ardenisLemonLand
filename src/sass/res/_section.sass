@@ -18,8 +18,6 @@
       &__number
         transition: $transition
         color: $black
-        &:before
-          left: -39.5%
 
   &--wrapper
     width: 100%
@@ -27,12 +25,22 @@
     position: relative
     display: flex
 
-@media screen and (max-width: 1336px)
-  .section--active .pages
-    padding-left: 34%
+@media screen and (max-width: 1366px)
+  .section--active
+    .pages
+      padding-left: 25%
 
 @media screen and (max-width: 1024px)
-  .section--active .pages
-    padding-left: 30%
-    padding-right: 12.5%
-    &__number
+  .section--active
+    .pages
+      padding-left: 30%
+
+@media screen and (max-width: 768px)
+  .section--active
+    .pages
+      padding: 12.5rem 7.5% 12.5rem 35%
+
+@media screen and (max-width: 480px)
+  .section--active
+    .pages
+      padding: 12.5rem 2.5% 12.5rem 20%
