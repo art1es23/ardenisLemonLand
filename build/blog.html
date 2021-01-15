@@ -64,14 +64,23 @@
         <main id="mainContent" class="main-content">
 
             <div class="page page--blog">
-                <ul class="tabs-triggers">
-                    <li data-filter-id="Всі" class="tabs-triggers__item">Всі</li>
-                    <li data-filter-id="Дизайн" class="tabs-triggers__item">Дизайн</li>
-                    <li data-filter-id="Розробка" class="tabs-triggers__item">Розробка</li>
-                    <li data-filter-id="Google" class="tabs-triggers__item">Google</li>
-                    <li data-filter-id="Реклама" class="tabs-triggers__item">Реклама</li>
-                    <li data-filter-id="Підтримка" class="tabs-triggers__item">Підтримка</li>
-                </ul>
+                <div class="tabs-triggers">
+                    <button class="btn--filter">
+                        <span>Фільтр</span>
+                        <svg class="">
+                            <use xlink:href="./img/sprite.svg#down"></use>
+                        </svg>
+                    </button>
+
+                    <ul class="tabs-triggers--wrapper">
+                        <li data-filter-id="Всі" class="tabs-triggers__item">Всі</li>
+                        <li data-filter-id="Дизайн" class="tabs-triggers__item">Дизайн</li>
+                        <li data-filter-id="Розробка" class="tabs-triggers__item">Розробка</li>
+                        <li data-filter-id="Google" class="tabs-triggers__item">Google</li>
+                        <li data-filter-id="Реклама" class="tabs-triggers__item">Реклама</li>
+                        <li data-filter-id="Підтримка" class="tabs-triggers__item">Підтримка</li>
+                    </ul>
+                </div>
 
                 <div class="tabs-content">
                     <div class="container">

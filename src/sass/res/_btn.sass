@@ -55,16 +55,70 @@
     &:active
       background-color: rgba($purple, 1)
 
-@media screen and (max-width: 1336px)
+  &--filter
+    display: none
+    border: none
+    height: 5rem
+    flex-direction: column
+    justify-content: center
+    align-items: center
+    background-color: transparent
+    transition: $transition
+    padding: 2.5%
+    span
+      transition: $transition
+      font-size: 2.5vw
+    svg
+      transition: $transition
+      width: 40%
+
+    &:hover,
+    &:focus,
+    &:active
+      cursor: pointer
+      span
+        color: $purple
+      svg
+        fill: $purple
+
+@media screen and ( max-width: 1600px)
+  .btn
+    &--order
+      font-size: 1vw
+
+@media screen and (max-width: 1366px)
   .btn
     &--close
       top: 5%
       right: 10%
+    &--order
+      font-size: 1.05vw
 @media screen and (max-width: 1224px)
   .btn
     &--order
       width: 20%
+      font-size: 1.45vw
     &--close
       top: 5%
       width: 3.5rem
       height: 3.5rem
+
+@media screen and (max-width: 768px)
+  .btn
+    &--order
+      width: 25%
+      font-size: 1.5vw
+
+    &--filter
+      display: flex
+
+@media screen and (max-width: 480px)
+  .btn
+    &--order
+      width: 50%
+      font-size: 3.5vw
+      order: 1
+
+    &--filter
+      span
+        font-size: 5vw

@@ -11,7 +11,7 @@
     align-content: center
     font-size: 3vw
     line-height: 4rem
-    padding: 0 2.5rem
+    padding: 0 2.5%
     display: flex
 
   &__description
@@ -32,11 +32,31 @@
     &__description
       font-size: 1.1vw
 
-@media screen and (max-width: 1224px)
-  .services
 @media screen and (max-width: 1024px)
   .services
     &__title
+      padding: 0 2.5% 0 0
       font-size: 5vw
     &__description
+      padding: 2.5% 0
       font-size: 1.35vw
+    &__caption
+      font-size: 2vw
+
+@media screen and (max-width: 768px)
+  .services
+    &__title
+      font-size: 6.5vw
+    &__description
+      font-size: 1.75vw
+    &__caption
+      font-size: 3vw
+
+@media screen and (max-width: 480px)
+  .services
+    &__title
+      font-size: 10vw
+    &__description
+      font-size: 3vw
+    &__caption
+      font-size: 5vw

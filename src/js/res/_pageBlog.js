@@ -1,6 +1,7 @@
 import gsap from 'gsap';
 import filter from './_filter';
 import modalOrder from './_modalOrder';
+import sortMenu from './_sortMenu';
 
 const pageBlog = (container) => {
     const header = container.querySelector('.header');
@@ -22,6 +23,7 @@ const pageBlog = (container) => {
     });
 
     modalOrder();
+    sortMenu(container);
     filter(container);
 
     tl

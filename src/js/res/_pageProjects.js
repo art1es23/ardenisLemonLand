@@ -1,4 +1,5 @@
 import gsap from 'gsap';
+import sortMenu from './_sortMenu';
 
 const pageHome = (container) => {
     const header = container.querySelector();

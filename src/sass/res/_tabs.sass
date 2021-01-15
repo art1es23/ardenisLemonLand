@@ -11,7 +11,11 @@
   padding: 2vh 17.5%
   border-bottom: 1px solid rgba($purple, 0.5)
   align-items: center
-  justify-content: flex-start
+
+  &--wrapper
+    display: flex
+    width: 100%
+    align-items: center
 
   &__item
     display: flex
@@ -59,5 +63,32 @@
 
 @media screen and (max-width: 1024px)
   .tabs-triggers
+    padding: 2vh 7.5%
     &__item
       font-size: 1.75vw
+
+@media screen and (max-width: 768px)
+  .tabs-triggers
+    flex-direction: column
+    padding: 0 7.5%
+    border-bottom: none
+
+    &--extend
+      padding: 0 7.5% 2vh
+      border-bottom: 1px solid rgba($purple, 0.5)
+
+    &--wrapper
+      display: none
+      flex-direction: column
+    &__item
+      font-weight: 300
+      width: 50%
+      font-size: 2.5vw
+
+  .tabs-content
+    &__item
+      padding: 0
+@media screen and (max-width: 480px)
+  .tabs-triggers
+    &__item
+      font-size: 5vw

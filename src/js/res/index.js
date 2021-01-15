@@ -35,3 +35,7 @@ export {
     default as pageServicesToServices
 }
 from './_pageServicesToServices';
+export {
+    default as sortMenu
+}
+from './_sortMenu';

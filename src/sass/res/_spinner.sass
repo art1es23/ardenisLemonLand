@@ -1,24 +1,36 @@
 @import "./src/sass/helpers/var"
 
 .spinner
-  height: 100vh
+  min-height: 100vh
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
   position: fixed
+  overflow: hidden
 
   &--wrapper
     border: 2px dashed $purple
     position: absolute
-    height: 110vh
-    width: 60%
+    min-height: 92.5vh
+    width: 50%
     left: 0
     transform: translateX(-50%)
     margin: auto 0
     border-radius: 50%
 
+@media screen and ( max-width: 1600px)
+  .spinner
+    &--wrapper
+      min-height: 95%
+
+@media screen and ( max-width: 1366px)
+  .spinner
+    &--wrapper
+      min-height: 90%
+
 @media screen and (max-width: 1024px)
   .spinner
     &--wrapper
-      height: 80vh
+      height: 50vh
+      width: 50%

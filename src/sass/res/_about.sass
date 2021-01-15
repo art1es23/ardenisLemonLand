@@ -18,8 +18,8 @@
     display: flex
     justify-content: flex-start
     align-items: center
-    font-size: 3.5rem
-    padding: 10% 0 5%
+    font-size: 3.5vw
+    padding: 5% 0
 
   &__description
     &--wrapper
@@ -30,13 +30,46 @@
 
       p
         padding: 0.75rem 0
-        font-size: 1.25rem
+        font-size: 1.25vw
         color: $white
+        text-align: justify
 
 @media screen and (max-width: 1336px)
   .about
-    width: 42.5%
+    width: 45%
     &__description
       &--wrapper
         p
-          font-size: 1rem
+          font-size: 1.25vw
+
+@media screen and (max-width: 1024px)
+  .about
+    width: 50%
+    &__title
+      font-size: 4.5vw
+    &__description
+      &--wrapper
+        p
+          font-size: 1.65vw
+
+@media screen and ( max-width: 768px)
+  .about
+    width: 70%
+    &__title
+      font-size: 6.5vw
+    &__description
+      &--wrapper
+        p
+          font-size: 2vw
+
+@media screen and ( max-width: 480px)
+  .about
+    width: 100%
+    &--wrapper
+      padding-bottom: 0
+    &__title
+      font-size: 10vw
+    &__description
+      &--wrapper
+        p
+          font-size: 3.5vw

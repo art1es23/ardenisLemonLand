@@ -39,7 +39,6 @@ body
   scroll-behavior: smooth
 
 .wrapper
-  min-height: 100vh
   position: relative
 
 .main
@@ -168,7 +167,7 @@ p
       font-size: 1vw
 
 .content--height
-  min-height: 90vh
+  min-height: 100vh
 
 .transition
   display: flex
@@ -195,11 +194,17 @@ p
     width: 100%
     object-fit: cover
 
+.show
+  display: flex
+
+.rotateBtn
+  svg
+    transition: $transition
+    transform: rotateX(180deg)
+
 @media screen and (max-width: 1600px)
   .container
     width: 80%
-  .content--height
-    min-height: 88vh
 @media screen and (max-width: 1224px)
   .container
     width: 85%
@@ -208,6 +213,11 @@ p
     line-height: 1.25rem
     font-size: 1vw
   .container
-    width: 90%
+    width: 85%
+
+@media screen and ( max-width: 768px)
+  .title
+    &--wrapper
+      justify-content: space-between
 
 @import "helpers/fonts"
