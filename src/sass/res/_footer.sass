@@ -7,12 +7,16 @@
   left: 0
   display: flex
   align-items: center
+  box-shadow: 0 0 2.5px 0 $purple
+
   justify-content: space-between
 
   &--fixed
+    display: flex
     position: fixed
     bottom: 0
     left: 0
+    flex-direction: column
     z-index: 100
     min-height: 10vh
 
@@ -29,19 +33,24 @@
     width: 100%
     margin: 0 auto
     display: flex
-    box-shadow: 0 0 2.5px 0 $purple
     justify-content: space-between
     align-items: center
     z-index: 11
 
+    &--extend
+
   &--about
     width: 100%
     background-color: transparent
+    position: fixed
     bottom: 0
     left: 0
     z-index: 100
     box-shadow: none
     justify-content: flex-end
+
+    .copyright
+      color: $white
 
 .copyright
   width: 20%
@@ -79,10 +88,15 @@
       padding: 5% 2.5%
 
     &--fixed
+      // visibility: hidden
+      // opacity: 0
       .btn--footer
         display: flex
-      .footer--wrapper
-        display: none
+    &--about
+      position: relative
+      background-color: transparent
+    &--wrapper--extend
+      display: none
 
   .copyright
     font-size: 3.5vw
@@ -91,3 +105,12 @@
     justify-content: center
     align-items: center
     order: 3
+
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .footer
+    &--fixed
+      opacity: 0
+      visibility: hidden
+
+  .copyright
+    font-size: 1.75vw

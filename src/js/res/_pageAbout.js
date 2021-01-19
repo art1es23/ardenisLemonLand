@@ -1,5 +1,6 @@
 import gsap from 'gsap';
 import modalOrder from './_modalOrder';
+import menuMobile from './_menuMobile';
 
 const pageAbout = (container) => {
     const header = container.querySelector('.header');
@@ -17,6 +18,9 @@ const pageAbout = (container) => {
             delay: 0
         },
     });
+
+    modalOrder();
+    menuMobile(container);
 
     tl
         .fromTo(container, 1, {

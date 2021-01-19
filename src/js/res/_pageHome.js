@@ -1,6 +1,8 @@
 import gsap from 'gsap';
 import wheelMainPage from './_wheelMainPage';
 import modalOrder from './_modalOrder';
+import footerOpen from './_footerOpen';
+import menuMobile from './_menuMobile';
 
 const pageHome = (container) => {
 
@@ -16,7 +18,11 @@ const pageHome = (container) => {
     });
 
     modalOrder();
+    footerOpen(container);
     wheelMainPage(container);
+    menuMobile(container);
+
+
     tl
         .fromTo(container, 1, {
             xPercent: -100,

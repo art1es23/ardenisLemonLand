@@ -1,5 +1,4 @@
 const filter = (page) => {
-    console.log('FILTER');
 
     let getElement = (c) => page.querySelectorAll(c);
 

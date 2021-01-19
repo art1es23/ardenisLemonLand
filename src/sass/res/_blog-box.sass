@@ -81,6 +81,11 @@
     color: $white
     font-size: 0.65vw
 
+.other-blog-article__title
+  width: 100%
+  display: flex
+  font-size: 2.5vw
+
 @media screen and (max-width: 1600px)
   .blog-box
     &__item
@@ -109,21 +114,48 @@
 
 @media screen and (max-width: 1024px)
   .blog-box
+    grid-template-columns: repeat(3, auto)
+    padding: 5% 0
+
+    &__item
+      h3
+        font-size: 2vw
+
+  .date-publish
+    font-size: 1.25vw
+    &__number
+      font-size: 3.5vw
+
+  .categories
+    &__item
+      font-size: 1vw
+
+@media screen and (max-width: 768px)
+  .blog-box
     grid-template-columns: repeat(2, auto)
-    padding: 10% 0
+    padding: 5% 0
 
     &__item
       h3
         font-size: 3.5vw
 
   .date-publish
-    font-size: 2vw
+    font-size: 1.5vw
     &__number
       font-size: 5vw
 
   .categories
     &__item
       font-size: 1.5vw
+
+  .other-blog-article
+    .blog-box
+      grid-template-columns: repeat(1, 75%)
+      &__item
+        transform: translateX(15%)
+        margin: 0 auto
+        h3
+          font-size: 5vw
 
 @media screen and (max-width: 480px)
   .blog-box
@@ -140,3 +172,32 @@
   .categories
     &__item
       font-size: 2.5vw
+
+  .other-blog-article
+    &__title
+      font-size: 7.5vw
+    .blog-box
+      grid-template-columns: repeat(1, auto)
+      &__item
+        transform: translateX(0)
+
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .other-blog-article
+    .blog-box
+      grid-template-columns: repeat(3, auto)
+      &__item
+        transform: translateX(0)
+        h3
+          font-size: 2.5vw
+
+    .date-publish
+      line-height: 1.25vw
+      font-size: 1.25vw
+      &__number
+        line-height: 2.5vw
+        font-size: 3.5vw
+
+    .categories
+      &__item
+        padding: 0.25rem 1vw
+        font-size: 1vw

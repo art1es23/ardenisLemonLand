@@ -9,11 +9,6 @@ import {
     pageServiceArticle,
     pageServicesToServices
 } from './res';
-import {
-    wheelMainPage,
-    tabsToggle,
-    modalOrder
-} from './res';
 
 const pageTransition = () => {
     let tl = gsap.timeline();
@@ -35,10 +30,12 @@ const pageTransition = () => {
 
 barba.hooks.beforeEnter(data => {
     let nextTarget = data.next.container;
+    window.scrollTo(0, 0);
 });
 
 barba.hooks.once(data => {
     let nextTarget = data.next.container;
+    window.scrollTo(0, 0);
 });
 
 barba.init({

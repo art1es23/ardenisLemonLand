@@ -4,7 +4,7 @@
   width: 40%
   display: flex
   background-color: rgba($gray, 0.5)
-  height: 100vh
+  min-height: 100vh
 
   &--wrapper
     display: flex
@@ -73,3 +73,6 @@
       &--wrapper
         p
           font-size: 3.5vw
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .about
+    width: 100%

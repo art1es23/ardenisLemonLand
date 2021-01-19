@@ -1,17 +1,18 @@
 @import "./src/sass/helpers/var"
+@import "./src/sass/helpers/mixins"
 
 .services-content
     display: flex
     width: 100%
     background-color: $white
     z-index: 2
-    font-size: 1.25vw
 
     &__legend
         display: flex
         color: $black
         line-height: 2.5rem
         text-align: justify
+        font-size: 1.25vw
 
     &--wrapper
         display: flex
@@ -23,21 +24,24 @@
     display: flex
     flex-direction: column
     justify-content: space-between
-    margin: 2.5% 0
+    margin: 1.5% 0
 
     &__title
         font-size: 2.5vw
+        margin: 3.5% 0
 
     &__description
         text-align: justify
         line-height: 2.5rem
         margin: 1% 0
+        font-size: 1.25vw
         color: $black
+
     &__btn
         width: 25%
         margin-top: 1%
         background-color: yellow
-        padding: 1rem
+        padding: 1rem 1.25vw
         border: 1px solid $gray
         font-size: 1.25vw
 
@@ -51,3 +55,60 @@
         width: 100%
         text-align: justify
         margin: 1% 0
+        line-height: 2.5rem
+        font-size: 1.25vw
+
+@media screen and ( max-width: 1224px)
+    .services-content
+        &__legend
+            line-height: 1.5rem
+
+    .services-article
+        &__description
+            line-height: 1.5rem
+
+    .list-description
+        &__item
+            line-height: 1.5rem
+
+@media screen and ( max-width: 768px)
+    .services-content
+        &--wrapper
+            padding: 5% 0
+        &__legend
+            font-size: 2.25vw
+
+    .services-article
+        &__title
+            font-size: 3.5vw
+        &__description
+            font-size: 2.25vw
+        &__btn
+            width: 50%
+            padding: 0.75rem 1vw
+            font-size: 2.25vw
+
+    .list-description
+        &__item
+            font-size: 2.25vw
+
+@media screen and ( max-width: 480px)
+    .services-content
+        &--wrapper
+            width: 95%
+            margin: 0 auto
+        &__legend
+            font-size: 4vw
+
+    .services-article
+        &__title
+            font-size: 6.5vw
+        &__description
+            font-size: 4vw
+            margin: 1.5% 0
+        &__btn
+            font-size: 4vw
+
+    .list-description
+        &__item
+            font-size: 4vw

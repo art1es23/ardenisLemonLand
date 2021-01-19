@@ -49,6 +49,7 @@
     padding: 1.25rem 1rem
     font-size: 1.25rem
     border: none
+    width: 100%
 
 .modal-order
   &--active
@@ -80,13 +81,70 @@ label
 @media screen and (max-width: 1336px)
   .modal
     width: 50%
-  @media screen and (max-width: 1224px)
-    .modal
-      &__title
-        font-size: 3rem
-    @media screen and (max-width: 1224px)
-      .modal
-        &__title
-          font-size: 2.5rem
-        &__description
-          font-size: 1.25rem
+@media screen and (max-width: 1224px)
+  .modal
+    &__title
+      font-size: 2.5rem
+    &__description
+      font-size: 1.25rem
+
+@media screen and (max-width: 768px)
+  .modal
+    width: 100%
+    height: 100vh
+    padding: 0 10%
+    justify-content: center
+    align-items: center
+    &__title
+      font-size: 7.5vw
+    &__description
+      line-height: 2rem
+      font-size: 3vw
+    &__input
+      margin: 1.25rem auto
+      padding: 1.5rem 0.75rem
+    &__comment
+
+@media screen and ( max-width: 480px)
+  .modal
+    justify-content: space-around
+    padding: 10% 5%
+    &__title
+      font-size: 8.5vw
+      margin-top: 2.5%
+    &__description
+      line-height: 1.5rem
+      font-size: 4.5vw
+      padding: 0
+      text-align: justify
+    &__input
+      margin: 0.5rem auto
+      padding: 1.25rem 0.75rem
+
+  .input--wrapper
+    flex-wrap: wrap
+    label
+      width: 85%
+  .checkbox
+    width: 5%
+
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .modal
+    flex-wrap: wrap
+    flex-direction: row
+    align-items: baseline
+    &__title
+      font-size: 5vw
+    &__description
+      padding: 1.5% 0
+      font-size: 2vw
+    &__input
+      margin: 1.5% auto
+      width: 45%
+      padding: 2.5%
+    &__comment
+      width: 45%
+      margin: 1.5% auto
+
+  .input--wrapper
+    margin: 0 auto

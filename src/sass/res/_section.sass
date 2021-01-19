@@ -14,10 +14,13 @@
     z-index: 5
     opacity: 1
     .pages
-      padding-left: 29.5%
+      margin-left: 20%
+      opacity: 1
       &__number
         transition: $transition
         color: $black
+      &--wrapper
+        opacity: 1
 
   &--wrapper
     width: 100%
@@ -25,22 +28,16 @@
     position: relative
     display: flex
 
-@media screen and (max-width: 1366px)
-  .section--active
-    .pages
-      padding-left: 25%
-
-@media screen and (max-width: 1024px)
-  .section--active
-    .pages
-      padding-left: 30%
-
 @media screen and (max-width: 768px)
   .section--active
     .pages
-      padding: 12.5rem 7.5% 12.5rem 35%
+      margin-left: 30%
 
 @media screen and (max-width: 480px)
   .section--active
     .pages
-      padding: 12.5rem 2.5% 12.5rem 20%
+      margin-left: 25%
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .section--active
+    .pages
+      margin-left: 17.5%

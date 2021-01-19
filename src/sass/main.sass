@@ -22,14 +22,36 @@
 @import 'res/services-content'
 @import 'res/hero'
 
+@keyframes showMenu
+  0%
+    opacity: 0
+    visibility: hidden
+    transform: translateX(-100%)
+
+  100%
+    opacity: 1
+    visibility: visible
+    transform: translateX(0)
+
+@keyframes hideMenu
+  0%
+    opacity: 1
+    visibility: visible
+    transform: translateX(0)
+
+  100%
+    opacity: 0
+    visibility: hidden
+    transform: translateX(-100%)
+
 *, *:before, *:after
   box-sizing: border-box
   margin: 0
   padding: 0
 
 body
-  font-family: Raleway
-  font-weight: 500
+  font-family: Montserrat
+  font-weight: 400
   color: $black
   display: flex
   background-color: $gray
@@ -37,9 +59,18 @@ body
   justify-content: space-between
   overflow-x: hidden
   scroll-behavior: smooth
+  scroll-margin-top: 10vh
 
 .wrapper
   position: relative
+
+  &--home
+    overflow: hidden
+    position: fixed
+    top: 0
+    left: 0
+    height: 100vh
+    width: 100%
 
 .main
   &-content
@@ -56,6 +87,9 @@ article
 svg
   width: 100%
   height: 100%
+
+h1, h2, h3, h4, h5, h6
+  font-weight: 700
 
 a
   text-decoration: none
@@ -79,6 +113,7 @@ p
   width: 65%
   margin: 0 auto
   flex-direction: column
+  position: relative
 
   &--direction
     flex-direction: row
@@ -135,7 +170,7 @@ p
   position: fixed
   &--wrapper
     width: 100%
-    height: 100vh
+    min-height: 100vh
     display: flex
     justify-content: center
     align-items: center
@@ -164,7 +199,7 @@ p
         color: $black
     span
       margin-right: 0.5rem
-      font-size: 1vw
+      font-size: 1.1vw
 
 .content--height
   min-height: 100vh
@@ -202,9 +237,54 @@ p
     transition: $transition
     transform: rotateX(180deg)
 
+.mouse
+  display: none
+  width: 2.5rem
+  height: 3.5rem
+  border: 1px solid $purple
+  position: absolute
+  bottom: 15vh
+  left: 50%
+  transform: translateX(-50%)
+  border-radius: 20px
+  background-color: $white
+  &--wrapper
+    display: flex
+    width: 100%
+    height: 100%
+    position: relative
+
+  &::before
+    display: block
+    position: absolute
+    top: 10%
+    left: 50%
+    transform: translateX(-50%)
+    width: 40%
+    height: 25%
+    border-radius: 50%
+    background-color: $purple
+    content: ''
+    animation: roll 1.5s infinite
+
+@keyframes roll
+  0%
+    transform: translate(-50%, 0)
+    opacity: 1
+  100%
+    opacity: 0
+    transform: translate(-50%, 200%)
+
 @media screen and (max-width: 1600px)
   .container
     width: 80%
+
+@media screen and ( max-width: 1366px)
+  .breadcrumbs
+    &__link
+      span
+        font-size: 1.25vw
+
 @media screen and (max-width: 1224px)
   .container
     width: 85%
@@ -219,5 +299,25 @@ p
   .title
     &--wrapper
       justify-content: space-between
+  .breadcrumbs
+    opacity: 0
+    visibility: hidden
+    &__link
+      span
+        font-size: 2.25vw
+
+@media screen and ( max-width: 480px)
+  .breadcrumbs
+    &__link
+      span
+        font-size: 3.25vw
+
+  .mouse
+    display: flex
+
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .mouse
+    display: flex
+    bottom: 5vh
 
 @import "helpers/fonts"

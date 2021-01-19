@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import filter from './_filter';
 import modalOrder from './_modalOrder';
 import sortMenu from './_sortMenu';
+import menuMobile from './_menuMobile';
 
 const pageBlog = (container) => {
     const header = container.querySelector('.header');
@@ -25,6 +26,7 @@ const pageBlog = (container) => {
     modalOrder();
     sortMenu(container);
     filter(container);
+    menuMobile(container);
 
     tl
         .fromTo(container, 1, {

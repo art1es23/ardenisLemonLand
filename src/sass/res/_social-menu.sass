@@ -4,7 +4,7 @@
   display: flex
   justify-content: space-between
   align-items: center
-  width: 15%
+  width: 20%
   margin: 0 2.5% 0 auto
   &--aside
     flex-direction: column
@@ -12,6 +12,7 @@
     height: 20vh
     margin: 5% auto 0 0
     position: sticky
+    top: 2.5vh
 
   &__item
     width: 100%
@@ -23,7 +24,7 @@
     display: flex
     align-items: center
     justify-content: center
-    width: 2.5vw
+    width: 1.5vw
     height: 3.5vw
 
     svg
@@ -38,10 +39,23 @@
 @media screen and (max-width: 1600px)
   .social-menu
     width: 20%
+    &--aside
+      width: 10%
+
+@media screen and (max-width: 1224px)
+  .social-menu
+    &__link
+      width: 2vw
+      height: 2vw
 
 @media screen and (max-width: 1024px)
   .social-menu
-    width: 25%
+    width: 20%
+    &--aside
+      width: 10%
+    &__link
+      width: 2.75vw
+      height: 2.75vw
 
 @media screen and (max-width: 768px)
   .social-menu
@@ -50,6 +64,10 @@
     &__link
       width: 5vw
       height: 5vw
+    &--aside
+      margin: 5% auto
+      width: 15%
+      order: 2
 
 @media screen and (max-width: 480px)
   .social-menu
@@ -59,3 +77,14 @@
     &__link
       width: 10vw
       height: 10vw
+    &--aside
+      width: 20%
+      height: 25vh
+      display: none
+
+      &__item
+        margin: 2.5% auto
+
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .social-menu--aside
+    height: 50vh

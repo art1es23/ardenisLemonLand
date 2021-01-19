@@ -2,6 +2,7 @@ import gsap from 'gsap';
 import tabsToggle from './_tabsToggle';
 import modalOrder from './_modalOrder';
 import sortMenu from './_sortMenu';
+import menuMobile from './_menuMobile';
 
 const pageServices = (container) => {
     const header = container.querySelector('.header');
@@ -26,6 +27,7 @@ const pageServices = (container) => {
     modalOrder();
     sortMenu(container);
     tabsToggle();
+    menuMobile(container);
 
     tl
         .fromTo(container, 1, {

@@ -12,38 +12,30 @@
   &--wrapper
     border: 2px dashed $purple
     position: absolute
-    min-height: 92.5vh
-    width: 50%
+    min-height: 50vh
+    width: 30%
     left: 0
     transform: translateX(-50%)
     margin: auto 0
     border-radius: 50%
 
-@media screen and ( max-width: 1600px)
-  .spinner
-    &--wrapper
-      min-height: 95%
-
-@media screen and ( max-width: 1366px)
-  .spinner
-    &--wrapper
-      min-height: 65%
-      width: 40%
-
 @media screen and ( max-width: 1024px)
   .spinner
     &--wrapper
-      min-height: 55%
-      width: 55%
+      width: 35%
 
 @media screen and (max-width: 768px)
   .spinner
     &--wrapper
-      width: 65%
-      min-height: 50%
+      width: 50%
+      min-height: 35vh
 
 @media screen and (max-width: 480px)
   .spinner
     &--wrapper
-      width: 25%
-      min-height: 15%
+      width: 45%
+      min-height: 25vh
+@media screen and (max-device-width: 767px) and (min-device-width: 320px) and (orientation: landscape)
+  .spinner
+    &--wrapper
+      width: 27.5%

@@ -18,6 +18,10 @@ export {
     default as pageServiceArticle
 }
 from './_pageServiceArticle';
+export {
+    default as menuMobile
+}
+from './_menuMobile';
 
 export {
     default as wheelMainPage
@@ -39,3 +43,12 @@ export {
     default as sortMenu
 }
 from './_sortMenu';
+export {
+    default as footerOpen
+}
+from './_footerOpen';
+
+export {
+    default as menuFixed
+}
+from './_menuFixed';
