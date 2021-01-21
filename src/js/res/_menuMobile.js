@@ -6,10 +6,16 @@ const menuMobile = (page) => {
 
     document.body.classList.remove('scroll--hidden');
 
-    // document.body.addEventListener('scroll', (evt) => {
-    //     evt.preventDefault();
-    //     console.log(evt.pageYOffset);
-    // });
+    document.body.addEventListener('scroll', evt => {
+        let scroll = window.pageYOffset;
+        let headerHeight = header.clientHeight;
+
+        if (scroll >= headerHeight) {
+            header.classList.add('header--color');
+        } else {
+            header.classList.remove('header--color');
+        }
+    });
 
 
     menuBtn.addEventListener('click', (e) => {
